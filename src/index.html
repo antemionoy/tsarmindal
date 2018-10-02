@@ -1,0 +1,56 @@
+//= template/head.html
+//= template/header.html
+<div class="center">
+    <div class="container">
+        <div class="center__title">Russian Train Tickets</div>
+        <form action="#" class="form center__form">
+            <div class="form__top d-flex">
+                <div class="form__item form__item_big">
+                    <label class="form__label">Departure city:</label>
+                    <input type="text" placeholder="Type city name" class="form__input">
+                    <div class="choice form__choice">
+                        <span>Ex:</span>
+                        <a href="#" class="choice__item">St.Peterburg</a>,
+                        <a href="#" class="choice__item">Moscow</a>
+                    </div>
+                </div>
+                <a href="#" class="form__swap"></a>
+                <div class="form__item form__item_big">
+                    <label class="form__label">Arrival city:</label>
+                    <input type="text" placeholder="Type city name" class="form__input">
+                    <div class="choice form__choice">
+                        <span>Ex:</span>
+                        <a href="#" class="choice__item">St.Peterburg</a>,
+                        <a href="#" class="choice__item">Moscow</a>
+                    </div>
+                </div>
+            </div>
+            <div class="form__bottom d-flex">
+                <div class="form__item">
+                    <label class="form__label">Departure date:</label>
+                    <input type="text" placeholder="dd.mm.yyy" class="form__input form__input_icon-date">
+                </div>
+                <div class="form__item form__item_row">
+                    <input class="form__checkbox" id="form__checkbox" type="checkbox">
+                    <label class="form__label" for="form__checkbox">Roundtrip</label>
+                </div>
+                <div class="form__item">
+                    <label class="form__label">Return date:</label>
+                    <input class="form__input form__disabled form__input_icon-date form__input_disabled" type="text" placeholder="dd.mm.yyy" disabled="disabled" >
+                </div>
+                <div class="form__item form__item_select-box">
+                    <label class="form__label">Currency</label>
+                    <select class="form__select">
+                        <option value="RUB">rub</option>
+                        <option value="USD">usd</option>
+                        <option value="BGR">gbr</option>
+                        <option value="EUR">eur</option>
+                        <option value="CHF">chf</option>
+                    </select>
+                </div>
+                <button class="form__button">Search</button>
+            </div>
+        </form>
+    </div>
+</div>
+//= template/foot.html
