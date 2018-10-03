@@ -1,0 +1,17 @@
+{
+  "name": "hello",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Anton <antemionoy@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/antemionoy/king-mindal",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
