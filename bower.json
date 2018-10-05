@@ -3,15 +3,19 @@
   "description": "",
   "main": "index.js",
   "authors": [
-    "Anton <antemionoy@gmail.com>"
+    "Anton Zavdorodniy <antemionoy@gmail.com>"
   ],
   "license": "ISC",
-  "homepage": "https://github.com/antemionoy/king-mindal",
+  "homepage": "https://github.com/antemionoy/heppo",
   "ignore": [
     "**/.*",
     "node_modules",
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "owl.carousel": "^2.3.4",
+    "slick-carousel": "^1.8.1"
+  }
 }

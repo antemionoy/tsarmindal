@@ -1,31 +1,38 @@
+//= ../../bower_components/jquery/dist/jquery.min.js
+//= ../../bower_components/owl.carousel/dist/owl.carousel.js
+
 "use strict";
 
-function changeCheckbox() {
-    var elementDisabled = document.querySelector('.form__disabled');
-    var elementCheckbox = document.querySelector('.form__checkbox');
+function owlFunction(carousel) {
 
-    elementCheckbox.onchange = function() {
-        elementDisabled.disabled = !this.checked;
-        elementDisabled.classList.toggle('form__input_disabled');
-    };
-}
+    $(carousel).owlCarousel({
+        items: 1,
+        loop: false,
+        nav: true,
+        dots: true,
+        dotsContainer: ".c-dots",
+        responsive: {
+            320: {
+                items: 1,
+            },
 
-function mainMenu(){
-    var hamburger = document.querySelector('.hamburger');
-    var nav = document.querySelector('nav');
+            480: {
+                items: 1
+            },
 
-    hamburger.onclick = function(){
-        this.classList.toggle('is-active');
-        nav.classList.toggle('header__menu_show');
-    };
+            768: {
+                items: 1
+            },
+
+            1023: {
+                items: 1
+            }
+        }
+    });
+
 }
 
 
 $(function() {
-    $('.form__select').select2({
-        minimumResultsForSearch: -1
-    });
-
-    changeCheckbox();
-    mainMenu();
+    owlFunction('.card__carousel');
 });
