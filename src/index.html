@@ -1,14 +1,14 @@
 //= template/header.html
 <main class="main">
-    <section class="promo" style="background-image: url(img/promo__image.jpg);">
+    <section class="promo promo_back-red" style="background-image: url(img/promo__image.jpg);">
         <div class="container">
             <div class="promo__row d-flex">
-                <div class="promo__col promo__col_vert-center d-flex">
+                <div class="promo__col promo__col-text promo__col_vert-center d-flex">
                     <h1 class="promo__title title title_h1">Орехи <br>и сухофрукты</h1>
                     <p class="promo__description">Орехи и сухофрукты высочайшего
                         <br> качества</p>
                 </div>
-                <div class="promo__col promo__col_vert-center promo__col_align-end d-flex">
+                <div class="promo__col promo__col_vert-center promo__col_align-end promo__col-pros d-flex">
                     <div class="promo__pros pros">
                         <div class="pros__item d-flex">
                             <div class="pros__circle">
@@ -20,13 +20,13 @@
                             <div class="pros__circle">
                                 <i class="pros__icon icon"></i>
                             </div>
-                            <div class="pros__text">Бесплатная доставка при заказе от 2500р</div>
+                            <div class="pros__text">оплата наличыми, по карте, по счету для юр.лиц</div>
                         </div>
                         <div class="pros__item d-flex">
                             <div class="pros__circle">
                                 <i class="pros__icon icon"></i>
                             </div>
-                            <div class="pros__text">Бесплатная доставка при заказе от 2500р</div>
+                            <div class="pros__text">БОЛЕЕ 50<br> ПУНКТОВ ВЫДАЧИ</div>
                         </div>
                     </div>
                 </div>
@@ -46,13 +46,30 @@
                         <div class="catalog__name">Арахис</div>
                         <div class="catalog__text">У арахиса богатая и длинная исто- рия, благодаря способу</div>
                         <div class="catalog__using d-flex">
-                            <div class="catalog__price h-price d-flex">
-                                <div class="h-price__value">110р</div>
-                                <div class="h-price__select">100г</div>
+                            <div class="catalog__price c-price d-flex">
+                                <div class="c-price__value">110р</div>
+                                <select name="#" id="#" class="c-price__select">
+                                    <option value="100">100</option>
+                                    <option value="200">200</option>
+                                </select>
                             </div>
-                            <div class="catalog__select">1</div>
-                            <div class="catalog__basket">
+                            <div class="catalog__quantity quantity">
+                                <input type="number" class="quantity__input" min="1" max="9" step="1" value="1">
+                            </div>
+                            <div class="catalog__basket c-basket">
                                 <i class="catalog__icon icon icon-basket_yellow"></i>
+                                <div class="c-backet__inner">
+                                    <div class="c-backet__box">
+                                        <div class="c-backet__btn d-flex">
+                                            <i class="c-backet__icon icon icon-basket_yellow"></i>
+                                            <div class="c-backet__text c-backet__text_orange">Добавить<br> в корзину</div>
+                                        </div>
+                                        <div class="c-backet__btn d-flex">
+                                            <i class="c-backet__icon icon icon-basket_yellow"></i>
+                                            <div class="c-backet__text c-backet__text_red">Купить в один клик</div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -63,13 +80,30 @@
                         <div class="catalog__name">Арахис</div>
                         <div class="catalog__text">У арахиса богатая и длинная исто- рия, благодаря способу</div>
                         <div class="catalog__using d-flex">
-                            <div class="catalog__price h-price d-flex">
-                                <div class="h-price__value">110р</div>
-                                <div class="h-price__select">100г</div>
+                            <div class="catalog__price c-price d-flex">
+                                <div class="c-price__value">110р</div>
+                                <select name="#" id="#" class="c-price__select">
+                                    <option value="100">100</option>
+                                    <option value="200">200</option>
+                                </select>
                             </div>
-                            <div class="catalog__select">1</div>
-                            <div class="catalog__basket">
+                            <div class="catalog__quantity quantity">
+                                <input type="number" class="quantity__input" min="1" max="9" step="1" value="1">
+                            </div>
+                            <div class="catalog__basket c-basket">
                                 <i class="catalog__icon icon icon-basket_yellow"></i>
+                                <div class="c-backet__inner">
+                                    <div class="c-backet__box">
+                                        <div class="c-backet__btn d-flex">
+                                            <i class="c-backet__icon icon icon-basket_yellow"></i>
+                                            <div class="c-backet__text c-backet__text_orange">Добавить<br> в корзину</div>
+                                        </div>
+                                        <div class="c-backet__btn d-flex">
+                                            <i class="c-backet__icon icon icon-basket_yellow"></i>
+                                            <div class="c-backet__text c-backet__text_red">Купить в один клик</div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -80,13 +114,30 @@
                         <div class="catalog__name">Арахис</div>
                         <div class="catalog__text">У арахиса богатая и длинная исто- рия, благодаря способу</div>
                         <div class="catalog__using d-flex">
-                            <div class="catalog__price h-price d-flex">
-                                <div class="h-price__value">110р</div>
-                                <div class="h-price__select">100г</div>
+                            <div class="catalog__price c-price d-flex">
+                                <div class="c-price__value">110р</div>
+                                <select name="#" id="#" class="c-price__select">
+                                    <option value="100">100</option>
+                                    <option value="200">200</option>
+                                </select>
                             </div>
-                            <div class="catalog__select">1</div>
-                            <div class="catalog__basket">
+                            <div class="catalog__quantity quantity">
+                                <input type="number" class="quantity__input" min="1" max="9" step="1" value="1">
+                            </div>
+                            <div class="catalog__basket c-basket">
                                 <i class="catalog__icon icon icon-basket_yellow"></i>
+                                <div class="c-backet__inner">
+                                    <div class="c-backet__box">
+                                        <div class="c-backet__btn d-flex">
+                                            <i class="c-backet__icon icon icon-basket_yellow"></i>
+                                            <div class="c-backet__text c-backet__text_orange">Добавить<br> в корзину</div>
+                                        </div>
+                                        <div class="c-backet__btn d-flex">
+                                            <i class="c-backet__icon icon icon-basket_yellow"></i>
+                                            <div class="c-backet__text c-backet__text_red">Купить в один клик</div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -97,13 +148,30 @@
                         <div class="catalog__name">Арахис</div>
                         <div class="catalog__text">У арахиса богатая и длинная исто- рия, благодаря способу</div>
                         <div class="catalog__using d-flex">
-                            <div class="catalog__price h-price d-flex">
-                                <div class="h-price__value">110р</div>
-                                <div class="h-price__select">100г</div>
+                            <div class="catalog__price c-price d-flex">
+                                <div class="c-price__value">110р</div>
+                                <select name="#" id="#" class="c-price__select">
+                                    <option value="100">100</option>
+                                    <option value="200">200</option>
+                                </select>
                             </div>
-                            <div class="catalog__select">1</div>
-                            <div class="catalog__basket">
+                            <div class="catalog__quantity quantity">
+                                <input type="number" class="quantity__input" min="1" max="9" step="1" value="1">
+                            </div>
+                            <div class="catalog__basket c-basket">
                                 <i class="catalog__icon icon icon-basket_yellow"></i>
+                                <div class="c-backet__inner">
+                                    <div class="c-backet__box">
+                                        <div class="c-backet__btn d-flex">
+                                            <i class="c-backet__icon icon icon-basket_yellow"></i>
+                                            <div class="c-backet__text c-backet__text_orange">Добавить<br> в корзину</div>
+                                        </div>
+                                        <div class="c-backet__btn d-flex">
+                                            <i class="c-backet__icon icon icon-basket_yellow"></i>
+                                            <div class="c-backet__text c-backet__text_red">Купить в один клик</div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -114,13 +182,30 @@
                         <div class="catalog__name">Арахис</div>
                         <div class="catalog__text">У арахиса богатая и длинная исто- рия, благодаря способу</div>
                         <div class="catalog__using d-flex">
-                            <div class="catalog__price h-price d-flex">
-                                <div class="h-price__value">110р</div>
-                                <div class="h-price__select">100г</div>
+                            <div class="catalog__price c-price d-flex">
+                                <div class="c-price__value">110р</div>
+                                <select name="#" id="#" class="c-price__select">
+                                    <option value="100">100</option>
+                                    <option value="200">200</option>
+                                </select>
                             </div>
-                            <div class="catalog__select">1</div>
-                            <div class="catalog__basket">
+                            <div class="catalog__quantity quantity">
+                                <input type="number" class="quantity__input" min="1" max="9" step="1" value="1">
+                            </div>
+                            <div class="catalog__basket c-basket">
                                 <i class="catalog__icon icon icon-basket_yellow"></i>
+                                <div class="c-backet__inner">
+                                    <div class="c-backet__box">
+                                        <div class="c-backet__btn d-flex">
+                                            <i class="c-backet__icon icon icon-basket_yellow"></i>
+                                            <div class="c-backet__text c-backet__text_orange">Добавить<br> в корзину</div>
+                                        </div>
+                                        <div class="c-backet__btn d-flex">
+                                            <i class="c-backet__icon icon icon-basket_yellow"></i>
+                                            <div class="c-backet__text c-backet__text_red">Купить в один клик</div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -131,13 +216,30 @@
                         <div class="catalog__name">Арахис</div>
                         <div class="catalog__text">У арахиса богатая и длинная исто- рия, благодаря способу</div>
                         <div class="catalog__using d-flex">
-                            <div class="catalog__price h-price d-flex">
-                                <div class="h-price__value">110р</div>
-                                <div class="h-price__select">100г</div>
+                            <div class="catalog__price c-price d-flex">
+                                <div class="c-price__value">110р</div>
+                                <select name="#" id="#" class="c-price__select">
+                                    <option value="100">100</option>
+                                    <option value="200">200</option>
+                                </select>
                             </div>
-                            <div class="catalog__select">1</div>
-                            <div class="catalog__basket">
+                            <div class="catalog__quantity quantity">
+                                <input type="number" class="quantity__input" min="1" max="9" step="1" value="1">
+                            </div>
+                            <div class="catalog__basket c-basket">
                                 <i class="catalog__icon icon icon-basket_yellow"></i>
+                                <div class="c-backet__inner">
+                                    <div class="c-backet__box">
+                                        <div class="c-backet__btn d-flex">
+                                            <i class="c-backet__icon icon icon-basket_yellow"></i>
+                                            <div class="c-backet__text c-backet__text_orange">Добавить<br> в корзину</div>
+                                        </div>
+                                        <div class="c-backet__btn d-flex">
+                                            <i class="c-backet__icon icon icon-basket_yellow"></i>
+                                            <div class="c-backet__text c-backet__text_red">Купить в один клик</div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -148,13 +250,30 @@
                         <div class="catalog__name">Арахис</div>
                         <div class="catalog__text">У арахиса богатая и длинная исто- рия, благодаря способу</div>
                         <div class="catalog__using d-flex">
-                            <div class="catalog__price h-price d-flex">
-                                <div class="h-price__value">110р</div>
-                                <div class="h-price__select">100г</div>
+                            <div class="catalog__price c-price d-flex">
+                                <div class="c-price__value">110р</div>
+                                <select name="#" id="#" class="c-price__select">
+                                    <option value="100">100</option>
+                                    <option value="200">200</option>
+                                </select>
                             </div>
-                            <div class="catalog__select">1</div>
-                            <div class="catalog__basket">
+                            <div class="catalog__quantity quantity">
+                                <input type="number" class="quantity__input" min="1" max="9" step="1" value="1">
+                            </div>
+                            <div class="catalog__basket c-basket">
                                 <i class="catalog__icon icon icon-basket_yellow"></i>
+                                <div class="c-backet__inner">
+                                    <div class="c-backet__box">
+                                        <div class="c-backet__btn d-flex">
+                                            <i class="c-backet__icon icon icon-basket_yellow"></i>
+                                            <div class="c-backet__text c-backet__text_orange">Добавить<br> в корзину</div>
+                                        </div>
+                                        <div class="c-backet__btn d-flex">
+                                            <i class="c-backet__icon icon icon-basket_yellow"></i>
+                                            <div class="c-backet__text c-backet__text_red">Купить в один клик</div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -165,13 +284,30 @@
                         <div class="catalog__name">Арахис</div>
                         <div class="catalog__text">У арахиса богатая и длинная исто- рия, благодаря способу</div>
                         <div class="catalog__using d-flex">
-                            <div class="catalog__price h-price d-flex">
-                                <div class="h-price__value">110р</div>
-                                <div class="h-price__select">100г</div>
+                            <div class="catalog__price c-price d-flex">
+                                <div class="c-price__value">110р</div>
+                                <select name="#" id="#" class="c-price__select">
+                                    <option value="100">100</option>
+                                    <option value="200">200</option>
+                                </select>
                             </div>
-                            <div class="catalog__select">1</div>
-                            <div class="catalog__basket">
+                            <div class="catalog__quantity quantity">
+                                <input type="number" class="quantity__input" min="1" max="9" step="1" value="1">
+                            </div>
+                            <div class="catalog__basket c-basket">
                                 <i class="catalog__icon icon icon-basket_yellow"></i>
+                                <div class="c-backet__inner">
+                                    <div class="c-backet__box">
+                                        <div class="c-backet__btn d-flex">
+                                            <i class="c-backet__icon icon icon-basket_yellow"></i>
+                                            <div class="c-backet__text c-backet__text_orange">Добавить<br> в корзину</div>
+                                        </div>
+                                        <div class="c-backet__btn d-flex">
+                                            <i class="c-backet__icon icon icon-basket_yellow"></i>
+                                            <div class="c-backet__text c-backet__text_red">Купить в один клик</div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -276,7 +412,6 @@
                     <div class="goods__head">
                         <img src="img/goods__image_one.jpg" alt="" class="goods__image responsive-img">
                         <i class="goods__icon icon goods__icon_one"></i>
-                        
                     </div>
                     <div class="goods__name">Орехи</div>
                 </div>
@@ -284,7 +419,6 @@
                     <div class="goods__head">
                         <img src="img/goods__image_one.jpg" alt="" class="goods__image responsive-img">
                         <i class="goods__icon icon goods__icon_one"></i>
-
                     </div>
                     <div class="goods__name">Орехи</div>
                 </div>
@@ -292,7 +426,6 @@
                     <div class="goods__head">
                         <img src="img/goods__image_one.jpg" alt="" class="goods__image responsive-img">
                         <i class="goods__icon icon goods__icon_one"></i>
-
                     </div>
                     <div class="goods__name">Орехи</div>
                 </div>
@@ -300,7 +433,6 @@
                     <div class="goods__head">
                         <img src="img/goods__image_one.jpg" alt="" class="goods__image responsive-img">
                         <i class="goods__icon icon goods__icon_one"></i>
-
                     </div>
                     <div class="goods__name">Орехи</div>
                 </div>
@@ -308,7 +440,6 @@
                     <div class="goods__head">
                         <img src="img/goods__image_one.jpg" alt="" class="goods__image responsive-img">
                         <i class="goods__icon icon goods__icon_one"></i>
-
                     </div>
                     <div class="goods__name">Орехи</div>
                 </div>
@@ -316,7 +447,6 @@
                     <div class="goods__head">
                         <img src="img/goods__image_one.jpg" alt="" class="goods__image responsive-img">
                         <i class="goods__icon icon goods__icon_one"></i>
-
                     </div>
                     <div class="goods__name">Орехи</div>
                 </div>
@@ -324,7 +454,6 @@
                     <div class="goods__head">
                         <img src="img/goods__image_one.jpg" alt="" class="goods__image responsive-img">
                         <i class="goods__icon icon goods__icon_one"></i>
-
                     </div>
                     <div class="goods__name">Орехи</div>
                 </div>
