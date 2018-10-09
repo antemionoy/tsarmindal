@@ -1,6 +1,13 @@
 //= template/header.html
 <main class="main">
-    <section class="promo promo_back-red" style="background-image: url(img/promo__image.jpg);">
+    <section class="promo promo_back-red">
+        <div class="promo__slider">
+            <img src="img/promo__image.jpg" class="promo__slide" alt="">
+            <img src="img/promo__image.jpg" class="promo__slide" alt="">
+            <img src="img/promo__image.jpg" class="promo__slide" alt="">
+            <img src="img/promo__image.jpg" class="promo__slide" alt="">
+            <img src="img/promo__image.jpg" class="promo__slide" alt="">
+        </div>
         <div class="container">
             <div class="promo__row d-flex">
                 <div class="promo__col promo__col-text promo__col_vert-center d-flex">
@@ -12,19 +19,19 @@
                     <div class="promo__pros pros">
                         <div class="pros__item d-flex">
                             <div class="pros__circle">
-                                <i class="pros__icon icon"></i>
+                                <i class="pros__icon icon-sprite icon-pros_one"></i>
                             </div>
                             <div class="pros__text">Бесплатная доставка при заказе от 2500р</div>
                         </div>
                         <div class="pros__item d-flex">
                             <div class="pros__circle">
-                                <i class="pros__icon icon"></i>
+                                <i class="pros__icon icon-sprite icon-pros_two"></i>
                             </div>
                             <div class="pros__text">оплата наличыми, по карте, по счету для юр.лиц</div>
                         </div>
                         <div class="pros__item d-flex">
                             <div class="pros__circle">
-                                <i class="pros__icon icon"></i>
+                                <i class="pros__icon icon-sprite icon-pros_three"></i>
                             </div>
                             <div class="pros__text">БОЛЕЕ 50<br> ПУНКТОВ ВЫДАЧИ</div>
                         </div>
@@ -37,7 +44,7 @@
         <div class="container">
             <div class="catalog__top title-box d-flex">
                 <h2 class="catalog__title title title_h2">Хиты продаж</h2>
-                <a href="#" class="catalog__btn btn d-flex">Перейти в каталог</a>
+                <a href="#" class="catalog__btn btn btn_border-left d-flex">Перейти в каталог</a>
             </div>
             <div class="catalog__row wrap d-flex">
                 <div class="catalog__item">
@@ -49,8 +56,8 @@
                             <div class="catalog__price c-price d-flex">
                                 <div class="c-price__value">110р</div>
                                 <select name="#" id="#" class="c-price__select">
-                                    <option value="100">100</option>
-                                    <option value="200">200</option>
+                                    <option value="100">100 г.</option>
+                                    <option value="200">200 г.</option>
                                 </select>
                             </div>
                             <div class="catalog__quantity quantity">
@@ -65,7 +72,7 @@
                                             <div class="c-backet__text c-backet__text_orange">Добавить<br> в корзину</div>
                                         </div>
                                         <div class="c-backet__btn d-flex">
-                                            <i class="c-backet__icon icon icon-basket_yellow"></i>
+                                            <i class="c-backet__icon icon icon-click_orange"></i>
                                             <div class="c-backet__text c-backet__text_red">Купить в один клик</div>
                                         </div>
                                     </div>
@@ -83,8 +90,8 @@
                             <div class="catalog__price c-price d-flex">
                                 <div class="c-price__value">110р</div>
                                 <select name="#" id="#" class="c-price__select">
-                                    <option value="100">100</option>
-                                    <option value="200">200</option>
+                                    <option value="100">100 г.</option>
+                                    <option value="200">200 г.</option>
                                 </select>
                             </div>
                             <div class="catalog__quantity quantity">
@@ -99,7 +106,81 @@
                                             <div class="c-backet__text c-backet__text_orange">Добавить<br> в корзину</div>
                                         </div>
                                         <div class="c-backet__btn d-flex">
+                                            <i class="c-backet__icon icon icon-click_orange"></i>
+                                            <div class="c-backet__text c-backet__text_red">Купить в один клик</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog__item">
+                    <div class="catalog__top">
+                        <img src="img/hits__image_one.jpg" alt="catalog__image" class="catalog__image responsive-img">
+                        <div class="catalog__status catalog__status_best "></div>
+                    </div>
+                    <div class="catalog__content">
+                        <div class="catalog__name">Арахис</div>
+                        <div class="catalog__text">У арахиса богатая и длинная исто- рия, благодаря способу</div>
+                        <div class="catalog__using d-flex">
+                            <div class="catalog__price c-price d-flex">
+                                <div class="c-price__value">110р</div>
+                                <select name="#" id="#" class="c-price__select">
+                                    <option value="100">100 г.</option>
+                                    <option value="200">200 г.</option>
+                                </select>
+                            </div>
+                            <div class="catalog__quantity quantity">
+                                <input type="number" class="quantity__input" min="1" max="9" step="1" value="1">
+                            </div>
+                            <div class="catalog__basket c-basket">
+                                <i class="catalog__icon icon icon-basket_yellow"></i>
+                                <div class="c-backet__inner">
+                                    <div class="c-backet__box">
+                                        <div class="c-backet__btn d-flex">
                                             <i class="c-backet__icon icon icon-basket_yellow"></i>
+                                            <div class="c-backet__text c-backet__text_orange">Добавить<br> в корзину</div>
+                                        </div>
+                                        <div class="c-backet__btn d-flex">
+                                            <i class="c-backet__icon icon icon-click_orange"></i>
+                                            <div class="c-backet__text c-backet__text_red">Купить в один клик</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog__item">
+                    <div class="catalog__top">
+                        <img src="img/hits__image_one.jpg" alt="catalog__image" class="catalog__image responsive-img">
+                        <div class="catalog__status catalog__status_discount"></div>
+                    </div>
+                    <div class="catalog__content">
+                        <div class="catalog__name">Арахис</div>
+                        <div class="catalog__text">У арахиса богатая и длинная исто- рия, благодаря способу</div>
+                        <div class="catalog__using d-flex">
+                            <div class="catalog__price c-price d-flex">
+                                <div class="c-price__value">110р</div>
+                                <select name="#" id="#" class="c-price__select">
+                                    <option value="100">100 г.</option>
+                                    <option value="200">200 г.</option>
+                                </select>
+                            </div>
+                            <div class="catalog__quantity quantity">
+                                <input type="number" class="quantity__input" min="1" max="9" step="1" value="1">
+                            </div>
+                            <div class="catalog__basket c-basket">
+                                <i class="catalog__icon icon icon-basket_yellow"></i>
+                                <div class="c-backet__inner">
+                                    <div class="c-backet__box">
+                                        <div class="c-backet__btn d-flex">
+                                            <i class="c-backet__icon icon icon-basket_yellow"></i>
+                                            <div class="c-backet__text c-backet__text_orange">Добавить<br> в корзину</div>
+                                        </div>
+                                        <div class="c-backet__btn d-flex">
+                                            <i class="c-backet__icon icon icon-click_orange"></i>
                                             <div class="c-backet__text c-backet__text_red">Купить в один клик</div>
                                         </div>
                                     </div>
@@ -117,8 +198,8 @@
                             <div class="catalog__price c-price d-flex">
                                 <div class="c-price__value">110р</div>
                                 <select name="#" id="#" class="c-price__select">
-                                    <option value="100">100</option>
-                                    <option value="200">200</option>
+                                    <option value="100">100 г.</option>
+                                    <option value="200">200 г.</option>
                                 </select>
                             </div>
                             <div class="catalog__quantity quantity">
@@ -133,7 +214,7 @@
                                             <div class="c-backet__text c-backet__text_orange">Добавить<br> в корзину</div>
                                         </div>
                                         <div class="c-backet__btn d-flex">
-                                            <i class="c-backet__icon icon icon-basket_yellow"></i>
+                                            <i class="c-backet__icon icon icon-click_orange"></i>
                                             <div class="c-backet__text c-backet__text_red">Купить в один клик</div>
                                         </div>
                                     </div>
@@ -151,8 +232,8 @@
                             <div class="catalog__price c-price d-flex">
                                 <div class="c-price__value">110р</div>
                                 <select name="#" id="#" class="c-price__select">
-                                    <option value="100">100</option>
-                                    <option value="200">200</option>
+                                    <option value="100">100 г.</option>
+                                    <option value="200">200 г.</option>
                                 </select>
                             </div>
                             <div class="catalog__quantity quantity">
@@ -167,7 +248,7 @@
                                             <div class="c-backet__text c-backet__text_orange">Добавить<br> в корзину</div>
                                         </div>
                                         <div class="c-backet__btn d-flex">
-                                            <i class="c-backet__icon icon icon-basket_yellow"></i>
+                                            <i class="c-backet__icon icon icon-click_orange"></i>
                                             <div class="c-backet__text c-backet__text_red">Купить в один клик</div>
                                         </div>
                                     </div>
@@ -185,8 +266,8 @@
                             <div class="catalog__price c-price d-flex">
                                 <div class="c-price__value">110р</div>
                                 <select name="#" id="#" class="c-price__select">
-                                    <option value="100">100</option>
-                                    <option value="200">200</option>
+                                    <option value="100">100 г.</option>
+                                    <option value="200">200 г.</option>
                                 </select>
                             </div>
                             <div class="catalog__quantity quantity">
@@ -201,7 +282,7 @@
                                             <div class="c-backet__text c-backet__text_orange">Добавить<br> в корзину</div>
                                         </div>
                                         <div class="c-backet__btn d-flex">
-                                            <i class="c-backet__icon icon icon-basket_yellow"></i>
+                                            <i class="c-backet__icon icon icon-click_orange"></i>
                                             <div class="c-backet__text c-backet__text_red">Купить в один клик</div>
                                         </div>
                                     </div>
@@ -219,8 +300,8 @@
                             <div class="catalog__price c-price d-flex">
                                 <div class="c-price__value">110р</div>
                                 <select name="#" id="#" class="c-price__select">
-                                    <option value="100">100</option>
-                                    <option value="200">200</option>
+                                    <option value="100">100 г.</option>
+                                    <option value="200">200 г.</option>
                                 </select>
                             </div>
                             <div class="catalog__quantity quantity">
@@ -235,75 +316,7 @@
                                             <div class="c-backet__text c-backet__text_orange">Добавить<br> в корзину</div>
                                         </div>
                                         <div class="c-backet__btn d-flex">
-                                            <i class="c-backet__icon icon icon-basket_yellow"></i>
-                                            <div class="c-backet__text c-backet__text_red">Купить в один клик</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="catalog__item">
-                    <img src="img/hits__image_one.jpg" alt="catalog__image" class="catalog__image responsive-img">
-                    <div class="catalog__content">
-                        <div class="catalog__name">Арахис</div>
-                        <div class="catalog__text">У арахиса богатая и длинная исто- рия, благодаря способу</div>
-                        <div class="catalog__using d-flex">
-                            <div class="catalog__price c-price d-flex">
-                                <div class="c-price__value">110р</div>
-                                <select name="#" id="#" class="c-price__select">
-                                    <option value="100">100</option>
-                                    <option value="200">200</option>
-                                </select>
-                            </div>
-                            <div class="catalog__quantity quantity">
-                                <input type="number" class="quantity__input" min="1" max="9" step="1" value="1">
-                            </div>
-                            <div class="catalog__basket c-basket">
-                                <i class="catalog__icon icon icon-basket_yellow"></i>
-                                <div class="c-backet__inner">
-                                    <div class="c-backet__box">
-                                        <div class="c-backet__btn d-flex">
-                                            <i class="c-backet__icon icon icon-basket_yellow"></i>
-                                            <div class="c-backet__text c-backet__text_orange">Добавить<br> в корзину</div>
-                                        </div>
-                                        <div class="c-backet__btn d-flex">
-                                            <i class="c-backet__icon icon icon-basket_yellow"></i>
-                                            <div class="c-backet__text c-backet__text_red">Купить в один клик</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="catalog__item">
-                    <img src="img/hits__image_one.jpg" alt="catalog__image" class="catalog__image responsive-img">
-                    <div class="catalog__content">
-                        <div class="catalog__name">Арахис</div>
-                        <div class="catalog__text">У арахиса богатая и длинная исто- рия, благодаря способу</div>
-                        <div class="catalog__using d-flex">
-                            <div class="catalog__price c-price d-flex">
-                                <div class="c-price__value">110р</div>
-                                <select name="#" id="#" class="c-price__select">
-                                    <option value="100">100</option>
-                                    <option value="200">200</option>
-                                </select>
-                            </div>
-                            <div class="catalog__quantity quantity">
-                                <input type="number" class="quantity__input" min="1" max="9" step="1" value="1">
-                            </div>
-                            <div class="catalog__basket c-basket">
-                                <i class="catalog__icon icon icon-basket_yellow"></i>
-                                <div class="c-backet__inner">
-                                    <div class="c-backet__box">
-                                        <div class="c-backet__btn d-flex">
-                                            <i class="c-backet__icon icon icon-basket_yellow"></i>
-                                            <div class="c-backet__text c-backet__text_orange">Добавить<br> в корзину</div>
-                                        </div>
-                                        <div class="c-backet__btn d-flex">
-                                            <i class="c-backet__icon icon icon-basket_yellow"></i>
+                                            <i class="c-backet__icon icon icon-click_orange"></i>
                                             <div class="c-backet__text c-backet__text_red">Купить в один клик</div>
                                         </div>
                                     </div>
@@ -333,7 +346,7 @@
                             <input type="text" class="form__input" placeholder="Ваше e-mail">
                         </div>
                         <button class="form__btn btn d-flex">
-                            <i class="btn__icon icon icon-gift"></i>
+                            <i class="btn__icon icon-sprite icon-btn-gift"></i>
                             <span class="btn__text">Хочу подарок</span>
                         </button>
                     </form>
@@ -347,44 +360,44 @@
             <div class="advs__row row d-flex">
                 <div class="advs__col col">
                     <div class="advs__item d-flex">
-                        <i class="advs__icon icon nav__icon_one"></i>
+                        <img src="img/adv__icon_one.png" alt="">
                         <div class="advs__text">Собсвтенное производтство</div>
                     </div>
                 </div>
                 <div class="advs__col col">
                     <div class="advs__item d-flex">
-                        <i class="adv__icon icon nav__icon_one"></i>
-                        <div class="advs__text">Собсвтенное производтство</div>
+                        <img src="img/adv__icon_two.png" alt="">
+                        <div class="advs__text">Индивидуальный подход</div>
                     </div>
                 </div>
                 <div class="advs__col col">
                     <div class="advs__item d-flex">
-                        <i class="adv__icon icon nav__icon_one"></i>
-                        <div class="advs__text">Собсвтенное производтство</div>
+                        <img src="img/adv__icon_three.png" alt="">
+                        <div class="advs__text">Двойной контроль качества продукции</div>
                     </div>
                 </div>
                 <div class="advs__col col">
                     <div class="advs__item d-flex">
-                        <i class="adv__icon icon nav__icon_one"></i>
-                        <div class="advs__text">Собсвтенное производтство</div>
+                        <img src="img/adv__icon_four.png" alt="">
+                        <div class="advs__text">Быстрая<br> Доставка</div>
                     </div>
                 </div>
                 <div class="advs__col col">
                     <div class="advs__item d-flex">
-                        <i class="adv__icon icon nav__icon_one"></i>
-                        <div class="advs__text">Собсвтенное производтство</div>
+                        <img src="img/adv__icon_five.png" alt="">
+                        <div class="advs__text">Соответствие веса и качества заявленному</div>
                     </div>
                 </div>
                 <div class="advs__col col">
                     <div class="advs__item d-flex">
-                        <i class="adv__icon icon nav__icon_one"></i>
-                        <div class="advs__text">Собсвтенное производтство</div>
+                        <img src="img/adv__icon_six.png" alt="">
+                        <div class="advs__text">Только свежая продукция</div>
                     </div>
                 </div>
                 <div class="advs__col col">
                     <div class="advs__item d-flex">
-                        <i class="adv__icon icon nav__icon_one"></i>
-                        <div class="advs__text">Собсвтенное производтство</div>
+                        <img src="img/adv__icon_seven.png" alt="">
+                        <div class="advs__text">Подарок к каждому заказу</div>
                     </div>
                 </div>
             </div>
@@ -480,7 +493,7 @@
                     </div>
                 </div>
                 <button class="form__btn recipe__btn btn d-flex">
-                    <i class="btn__icon icon icon-gift"></i>
+                    <i class="btn__icon icon-sprite icon-btn-knife"></i>
                     <span class="btn__text">Получить рецепт</span>
                 </button>
             </form>
@@ -496,27 +509,33 @@
                 <div class="news__item">
                     <img src="img/news__image_one.jpg" alt="" class="news__image">
                     <div class="news__content">
-                        <div class="news__date">12 сентября 2018</div>
-                        <div class="news__name">Ситуация на рынке орехов</div>
-                        <p class="news__text">Урожай RCN из Западной Африки прибыл во Вьетнам и складирован в портах</p>
+                        <div class="news__top">
+                            <div class="news__date">12 сентября 2018</div>
+                            <div class="news__name">Ситуация на рынке орехов</div>
+                            <p class="news__text">Урожай RCN из Западной Африки прибыл во Вьетнам и складирован в портах</p>
+                        </div>
                         <a href="#" class="news__more">Читать полностью</a>
                     </div>
                 </div>
                 <div class="news__item">
                     <img src="img/news__image_one.jpg" alt="" class="news__image">
                     <div class="news__content">
-                        <div class="news__date">12 сентября 2018</div>
-                        <div class="news__name">Ситуация на рынке орехов</div>
-                        <p class="news__text">Урожай RCN из Западной Африки прибыл во Вьетнам и складирован в портах</p>
+                        <div class="news__top">
+                            <div class="news__date">12 сентября 2018</div>
+                            <div class="news__name">Ситуация на рынке орехов</div>
+                            <p class="news__text">Урожай RCN из Западной Африки прибыл во Вьетнам и складирован в портах</p>
+                        </div>
                         <a href="#" class="news__more">Читать полностью</a>
                     </div>
                 </div>
                 <div class="news__item">
                     <img src="img/news__image_one.jpg" alt="" class="news__image">
                     <div class="news__content">
-                        <div class="news__date">12 сентября 2018</div>
-                        <div class="news__name">Ситуация на рынке орехов</div>
-                        <p class="news__text">Урожай RCN из Западной Африки прибыл во Вьетнам и складирован в портах</p>
+                        <div class="news__top">
+                            <div class="news__date">12 сентября 2018</div>
+                            <div class="news__name">Ситуация на рынке орехов</div>
+                            <p class="news__text">Урожай RCN из Западной Африки прибыл во Вьетнам и складирован в портах</p>
+                        </div>
                         <a href="#" class="news__more">Читать полностью</a>
                     </div>
                 </div>
