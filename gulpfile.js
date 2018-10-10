@@ -48,7 +48,7 @@ var config = {
     },
     tunnel: true,
     host: 'localhost',
-    port: 9000,
+    port: 8000,
     logPrefix: "frontend"
 };
 

@@ -1,2 +1,0 @@
-"# test-hotels" 
-"# king-mindal" 
