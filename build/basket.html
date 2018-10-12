@@ -216,184 +216,53 @@
     <div class="container">
         <div class="breadcrumbs d-flex">
             <div class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Главная</a></div>
-            <div class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Каталог</a></div>
-            <div class="breadcrumbs__item">Орехи</div>
+            <div class="breadcrumbs__item">Дотсавка</div>
         </div>
     </div>
-    <section class="catalog catalog-goods">
+    <section class="pannier">
         <div class="container">
-            <div class="catalog__top title-box d-flex">
-                <h1 class="catalog__title title title_h2">Грецкий орех</h1>
+            <div class="pannier__top title-box d-flex">
+                <h2 class="pannier__title title title_h2 title_text-trans_none">Корзина</h2>
+                <div class="border"></div>
+                <div class="pannier__info d-flex">
+                    <div class="pannier__count">У вас в корзине</div>
+                    <ul class="pannier_list list list_inline">
+                        <li class="list__item">Заказ до 250 рублей: <span class="list__regular">250 рублей</span></li>
+                        <li class="list__item">Заказ свыше 2500 рублей: <span class="list__regular">Бесплатно</span></li>
+                    </ul>
+                </div>
             </div>
-            <div class="catalog__row wrap d-flex">
-                <div class="catalog__item">
-                    <img src="img/hits__image_one.jpg" alt="catalog__image" class="catalog__image responsive-img">
-                    <div class="catalog__content">
-                        <div class="catalog__name">Арахис</div>
-                        <div class="catalog__text">У арахиса богатая и длинная исто- рия, благодаря способу</div>
-                        <div class="catalog__using d-flex">
-                            <div class="catalog__price h-price d-flex">
-                                <div class="h-price__value">110р</div>
-                                <div class="h-price__select">100г</div>
+            <div class="pannier__item d-flex">
+                <img src="img/basket-image.jpg" alt="" class="pannier__image">
+                <div class="pannier__row d-flex">
+                    <div class="pannier__name">Миндаль не жаренный</div>
+                    <div class="pannier__bottom d-flex">
+                        <div class="pannier__col d-flex">
+                            <div class="pannier__code code d-flex">
+                                <div class="code__name">Артикул: </div>
+                                <div class="code__value">1111-111-111</div>
                             </div>
-                            <div class="catalog__select">1</div>
-                            <div class="catalog__basket">
-                                <i class="catalog__icon icon icon-basket_yellow"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="catalog__item">
-                    <img src="img/hits__image_one.jpg" alt="catalog__image" class="catalog__image responsive-img">
-                    <div class="catalog__content">
-                        <div class="catalog__name">Арахис</div>
-                        <div class="catalog__text">У арахиса богатая и длинная исто- рия, благодаря способу</div>
-                        <div class="catalog__using d-flex">
-                            <div class="catalog__price h-price d-flex">
-                                <div class="h-price__value">110р</div>
-                                <div class="h-price__select">100г</div>
-                            </div>
-                            <div class="catalog__select">1</div>
-                            <div class="catalog__basket">
-                                <i class="catalog__icon icon icon-basket_yellow"></i>
+                            <div class="pannier__presence presence">
+                                <i class="presence__icon presence__icon_check-green"></i>
+                                <div class="presence__text">Есть в наличии</div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="catalog__item">
-                    <img src="img/hits__image_one.jpg" alt="catalog__image" class="catalog__image responsive-img">
-                    <div class="catalog__content">
-                        <div class="catalog__name">Арахис</div>
-                        <div class="catalog__text">У арахиса богатая и длинная исто- рия, благодаря способу</div>
-                        <div class="catalog__using d-flex">
-                            <div class="catalog__price h-price d-flex">
-                                <div class="h-price__value">110р</div>
-                                <div class="h-price__select">100г</div>
+                        <div class="pannier__col d-flex">
+                            <select name="#" id="#" class="c-using__select">
+                                <option value="100г">100 .г</option>
+                                <option value="200г">200 .г</option>
+                            </select>
+                            <div class="pannier__quantity quantity">
+                                <input type="number" class="quantity__input" min="1" max="9" step="1" value="1">
                             </div>
-                            <div class="catalog__select">1</div>
-                            <div class="catalog__basket">
-                                <i class="catalog__icon icon icon-basket_yellow"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="catalog__item">
-                    <img src="img/hits__image_one.jpg" alt="catalog__image" class="catalog__image responsive-img">
-                    <div class="catalog__content">
-                        <div class="catalog__name">Арахис</div>
-                        <div class="catalog__text">У арахиса богатая и длинная исто- рия, благодаря способу</div>
-                        <div class="catalog__using d-flex">
-                            <div class="catalog__price h-price d-flex">
-                                <div class="h-price__value">110р</div>
-                                <div class="h-price__select">100г</div>
-                            </div>
-                            <div class="catalog__select">1</div>
-                            <div class="catalog__basket">
-                                <i class="catalog__icon icon icon-basket_yellow"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="catalog__item">
-                    <img src="img/hits__image_one.jpg" alt="catalog__image" class="catalog__image responsive-img">
-                    <div class="catalog__content">
-                        <div class="catalog__name">Арахис</div>
-                        <div class="catalog__text">У арахиса богатая и длинная исто- рия, благодаря способу</div>
-                        <div class="catalog__using d-flex">
-                            <div class="catalog__price h-price d-flex">
-                                <div class="h-price__value">110р</div>
-                                <div class="h-price__select">100г</div>
-                            </div>
-                            <div class="catalog__select">1</div>
-                            <div class="catalog__basket">
-                                <i class="catalog__icon icon icon-basket_yellow"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="catalog__item">
-                    <img src="img/hits__image_one.jpg" alt="catalog__image" class="catalog__image responsive-img">
-                    <div class="catalog__content">
-                        <div class="catalog__name">Арахис</div>
-                        <div class="catalog__text">У арахиса богатая и длинная исто- рия, благодаря способу</div>
-                        <div class="catalog__using d-flex">
-                            <div class="catalog__price h-price d-flex">
-                                <div class="h-price__value">110р</div>
-                                <div class="h-price__select">100г</div>
-                            </div>
-                            <div class="catalog__select">1</div>
-                            <div class="catalog__basket">
-                                <i class="catalog__icon icon icon-basket_yellow"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="catalog__item">
-                    <img src="img/hits__image_one.jpg" alt="catalog__image" class="catalog__image responsive-img">
-                    <div class="catalog__content">
-                        <div class="catalog__name">Арахис</div>
-                        <div class="catalog__text">У арахиса богатая и длинная исто- рия, благодаря способу</div>
-                        <div class="catalog__using d-flex">
-                            <div class="catalog__price h-price d-flex">
-                                <div class="h-price__value">110р</div>
-                                <div class="h-price__select">100г</div>
-                            </div>
-                            <div class="catalog__select">1</div>
-                            <div class="catalog__basket">
-                                <i class="catalog__icon icon icon-basket_yellow"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="catalog__item">
-                    <img src="img/hits__image_one.jpg" alt="catalog__image" class="catalog__image responsive-img">
-                    <div class="catalog__content">
-                        <div class="catalog__name">Арахис</div>
-                        <div class="catalog__text">У арахиса богатая и длинная исто- рия, благодаря способу</div>
-                        <div class="catalog__using d-flex">
-                            <div class="catalog__price h-price d-flex">
-                                <div class="h-price__value">110р</div>
-                                <div class="h-price__select">100г</div>
-                            </div>
-                            <div class="catalog__select">1</div>
-                            <div class="catalog__basket">
-                                <i class="catalog__icon icon icon-basket_yellow"></i>
-                            </div>
+                            <div class="c-using__price c-using__price_old">2510р</div>
+                            <div class="c-using__price c-using__price_new">1210р</div>
+                            <div class="pannier__close"></div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <section class="recipe recipe_bgr-catalog">
-        <div class="container">
-            <h2 class="recipe__title">Блюда из орехов</h2>
-            <form action="#" class="recipe__form form">
-                <div class="form__row recipe__row d-flex">
-                    <div class="form__group">
-                        <input type="text" class="form__input" placeholder="Ваше имя">
-                    </div>
-                    <div class="form__group">
-                        <input type="text" class="form__input" placeholder="Ваше e-mail">
-                    </div>
-                </div>
-                <button class="form__btn recipe__btn btn d-flex">
-                    <i class="btn__icon icon-sprite icon-btn-knife"></i>
-                    <span class="btn__text">Получить рецепт</span>
-                </button>
-            </form>
-        </div>
-    </section>
-    <section class="info">
-        <div class="container">
-            <h3 class="info__title title title_h3">Грецкий Орех. Польза для здровья</h3>
-            <div class="info__row row d-flex">
-                <div class="info__col col">
-                    <p class="info__p">
-                        Орехи наполовину состоят из ненасыщенных жиров, которые прино- сят пользу организму и рекомендуются даже тем, кто сидит на диете (6-8 орешков не повредят фигуре). Эти жирные кислоты положитель- но влияют на работу головного мозга, особенно это важно для людей пенсионного возраста.
-                    </p>
-                </div>
-            </div>
         </div>
     </section>
 </main>

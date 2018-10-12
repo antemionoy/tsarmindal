@@ -1,0 +1,56 @@
+//= template/header.html
+<main class="main">
+    <div class="container">
+        <div class="breadcrumbs d-flex">
+            <div class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Главная</a></div>
+            <div class="breadcrumbs__item">Дотсавка</div>
+        </div>
+    </div>
+    <section class="pannier">
+        <div class="container">
+            <div class="pannier__top title-box d-flex">
+                <h2 class="pannier__title title title_h2 title_text-trans_none">Корзина</h2>
+                <div class="border"></div>
+                <div class="pannier__info d-flex">
+                    <div class="pannier__count">У вас в корзине</div>
+                    <ul class="pannier_list list list_inline">
+                        <li class="list__item">Заказ до 250 рублей: <span class="list__regular">250 рублей</span></li>
+                        <li class="list__item">Заказ свыше 2500 рублей: <span class="list__regular">Бесплатно</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pannier__item d-flex">
+                <img src="img/basket-image.jpg" alt="" class="pannier__image">
+                <div class="pannier__row d-flex">
+                    <div class="pannier__name">Миндаль не жаренный</div>
+                    <div class="pannier__bottom d-flex">
+                        <div class="pannier__col d-flex">
+                            <div class="pannier__code code d-flex">
+                                <div class="code__name">Артикул: </div>
+                                <div class="code__value">1111-111-111</div>
+                            </div>
+                            <div class="pannier__presence presence">
+                                <i class="presence__icon presence__icon_check-green"></i>
+                                <div class="presence__text">Есть в наличии</div>
+                            </div>
+                        </div>
+                        <div class="pannier__col d-flex">
+                            <select name="#" id="#" class="c-using__select">
+                                <option value="100г">100 .г</option>
+                                <option value="200г">200 .г</option>
+                            </select>
+                            <div class="pannier__quantity quantity">
+                                <input type="number" class="quantity__input" min="1" max="9" step="1" value="1">
+                            </div>
+                            <div class="c-using__price c-using__price_old">2510р</div>
+                            <div class="c-using__price c-using__price_new">1210р</div>
+                            <div class="pannier__close"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+</main>
+//= template/footer.html

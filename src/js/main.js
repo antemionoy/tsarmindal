@@ -100,9 +100,49 @@ function customSelect() {
 
 }
 
+function yaMap() {
+
+    if($('#map').length){
+
+        ymaps.ready(init);
+        var myMap, 
+        myPlacemark = [];
+
+        function init(){ 
+            myMap = new ymaps.Map("map", {
+                center: [59.959541, 30.316213],
+                zoom: 13,
+                controls: ['zoomControl'],
+                behaviors: ['drag']
+            }); 
+            
+            myPlacemark[0] = new ymaps.Placemark([55.715297, 37.574435], {
+                hintContent: 'Москва',
+                balloonContentHeader: 'Лужнецкая набережная, д.2/4, офис 237',
+            }, {
+                iconLayout: 'default#image',
+                iconImageHref: '../img/maker-map.png',
+                iconImageSize: [37, 50],
+                iconImageOffset: [-20, -60]
+            });
+   
+
+            for (var i = 0; i < myPlacemark.length; i++) {
+                myMap.geoObjects.add(myPlacemark[i]);
+            };
+
+        }
+
+    }
+
+
+}
+
+
 
 $(function() {
 
+    yaMap();
     cardBsuket();
     owlFunction('.card__carousel');
     quantity();
