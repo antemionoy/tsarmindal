@@ -88,9 +88,12 @@
                         </ul>
                     </div>
                     <div class="header__item d-flex">
-                        <button href="#" class="header__search search">
-                            <i class="icon-sprite icon-search"></i>
-                        </button>
+                        <div class="search-box">
+                            <input type="text" name="search" placeholder="Орехи интересуют?" class="search-text" />
+                            <button href="#" class="header__search search search-btn">
+                                <i class="icon-sprite icon-search"></i>
+                            </button>
+                        </div>
                         <a href="#" class="header__basket basket">
                             <i class="icon-sprite icon-basket"></i>
                             <p class="basket__figure">
@@ -262,7 +265,122 @@
                     </div>
                 </div>
             </div>
+            <div class="pannier__item d-flex">
+                <img src="img/basket-image.jpg" alt="" class="pannier__image">
+                <div class="pannier__row d-flex">
+                    <div class="pannier__name">Миндаль не жаренный</div>
+                    <div class="pannier__bottom d-flex">
+                        <div class="pannier__col d-flex">
+                            <div class="pannier__code code d-flex">
+                                <div class="code__name">Артикул: </div>
+                                <div class="code__value">1111-111-111</div>
+                            </div>
+                            <div class="pannier__presence presence">
+                                <i class="presence__icon presence__icon_check-green"></i>
+                                <div class="presence__text">Есть в наличии</div>
+                            </div>
+                        </div>
+                        <div class="pannier__col d-flex">
+                            <select name="#" id="#" class="c-using__select">
+                                <option value="100г">100 .г</option>
+                                <option value="200г">200 .г</option>
+                            </select>
+                            <div class="pannier__quantity quantity">
+                                <input type="number" class="quantity__input" min="1" max="9" step="1" value="1">
+                            </div>
+                            <div class="c-using__price c-using__price_old">2510р</div>
+                            <div class="c-using__price c-using__price_new">1210р</div>
+                            <div class="pannier__close"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="order">
+                <h2 class="order__title title title_h2 title_text-trans_none">Оформление заказа</h2>
+                <p class="order__subtitle">Персональные данные</p>
+                <form class="order__form form">
+                    <div class="form__grid wrap d-flex">
+                        <div class="form__group form__group_width-25">
+                            <input type="text" class="form__input">
+                        </div>
+                        <div class="form__group form__group_width_75">
+                            <input type="text" class="form__input">
+                        </div>
+                        <div class="form__group form__group_width-25">
+                            <input type="text" class="form__input">
+                        </div>
+                        <div class="form__group form__group_width-25">
+                            <input type="text" class="form__input">
+                        </div>
+                        <div class="form__group form__group_width-25">
+                            <input type="text" class="form__input">
+                        </div>
+                        <div class="form__group form__group_width-25">
+                            <input type="text" class="form__input">
+                        </div>
+                    </div>
+                    <div class="form__grid d-flex">
+                        <div class="order__col">
+                            <div class="order__radio d-flex">
+                                <div class="form__radiobox">
+                                    <input type="radio" id="a-option" class="form__radio" name="selector">
+                                    <label for="a-option">Доставка курьером</label>
+                                    <div class="radio__check"></div>
+                                </div>
+                                <div class="border"></div>
+                                <div class="form__radiobox">
+                                    <input type="radio" id="b-option" class="form__radio" name="selector">
+                                    <label for="b-option">Самовывоз</label>
+                                    <div class="radio__check"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order__col">
+                            <div class="order__descr">
+                                Некоторые заказы могут занять большее время на обработку. Товар, которого нет в наличии может быть доставленн по факту поступления на склад
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form__grid">
+                        <h2 class="order__title title title_h2 title_text-trans_none">Выберите способ оплаты</h2>
+                        <div class="form__payment payment d-flex">
+                            <div class="payment__col col d-flex">
+                                <img src="img/paymant__icon.png" alt="" class="payment__icon">
+                                <div class="payment__text">
+                                    Наличными при получении
+                                </div>
+                            </div>
+                            <div class="payment__col col d-flex">
+                                <img src="img/paymant__icon.png" alt="" class="payment__icon">
+                                <div class="payment__text">
+                                    Наличными при получении
+                                </div>
+                            </div>
+                            <div class="payment__col col d-flex">
+                                <img src="img/paymant__icon.png" alt="" class="payment__icon">
+                                <div class="payment__text">
+                                    Наличными при получении
+                                </div>
+                            </div>
+                            <div class="payment__col col d-flex">
+                                <img src="img/paymant__icon.png" alt="" class="payment__icon">
+                                <div class="payment__text">
+                                    Наличными при получении
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
         </div>
+    </section>
+    <section class="total">
+        <div class="container">
+            <h2 class="total__title title">Итоговая стоимость</h2>
+            <div class="form__check">
+                <input id="form__checkbox-2" class="form__checkbox" type="checkbox" checked="checked" name="checkbox" value="true">
+                <label for="form__checkbox-2">я подтверждаю согласие с правилами и условиями<a href="#" class="form__checkbox-link">политики конфиденциальности</a></label>
+            </div>
         </div>
     </section>
 </main>
