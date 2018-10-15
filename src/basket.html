@@ -7,151 +7,160 @@
         </div>
     </div>
     <section class="pannier">
-        <div class="container">
+        <div class="container pannier__container">
             <div class="pannier__top title-box d-flex">
                 <h2 class="pannier__title title title_h2 title_text-trans_none">Корзина</h2>
-                <div class="border"></div>
+                <div class="pannier__border border"></div>
                 <div class="pannier__info d-flex">
                     <div class="pannier__count">У вас в корзине</div>
-                    <ul class="pannier_list list list_inline">
-                        <li class="list__item">Заказ до 250 рублей: <span class="list__regular">250 рублей</span></li>
-                        <li class="list__item">Заказ свыше 2500 рублей: <span class="list__regular">Бесплатно</span></li>
+                    <ul class="pannier__list list list_inline">
+                        <li class="list__item">Товаров: <span class="list__regular">2</span></li>
+                        <li class="list__item">На сумму: <span class="list__regular">1 250 рублей</span></li>
                     </ul>
                 </div>
             </div>
-            <div class="pannier__item d-flex">
-                <img src="img/basket-image.jpg" alt="" class="pannier__image">
-                <div class="pannier__row d-flex">
-                    <div class="pannier__name">Миндаль не жаренный</div>
-                    <div class="pannier__bottom d-flex">
-                        <div class="pannier__col d-flex">
-                            <div class="pannier__code code d-flex">
-                                <div class="code__name">Артикул: </div>
-                                <div class="code__value">1111-111-111</div>
+            <div class="pannier__line">
+                <div class="pannier__item d-flex">
+                    <img src="img/basket-image.jpg" alt="" class="pannier__image">
+                    <div class="pannier__row d-flex">
+                        <div class="pannier__name">Миндаль не жаренный</div>
+                        <div class="pannier__bottom d-flex">
+                            <div class="pannier__col d-flex">
+                                <div class="pannier__code code d-flex">
+                                    <div class="code__name">Артикул: </div>
+                                    <div class="code__value">1111-111-111</div>
+                                </div>
+                                <div class="pannier__presence presence">
+                                    <i class="presence__icon presence__icon_check-green"></i>
+                                    <div class="presence__text">Есть в наличии</div>
+                                </div>
                             </div>
-                            <div class="pannier__presence presence">
-                                <i class="presence__icon presence__icon_check-green"></i>
-                                <div class="presence__text">Есть в наличии</div>
+                            <div class="pannier__col p-cols d-flex">
+                                <select name="#" id="#" class="c-using__select p-cols__item">
+                                    <option value="100г">100 .г</option>
+                                    <option value="200г">200 .г</option>
+                                </select>
+                                <div class="pannier__quantity quantity p-cols__item">
+                                    <input type="number" class="quantity__input" min="1" max="9" step="1" value="1">
+                                </div>
+                                <div class="c-using__price c-using__price_old p-cols__item">2510р</div>
+                                <div class="c-using__price c-using__price_new p-cols__item">1210р</div>
+                                <button class="pannier__close p-cols__item">x</button>
                             </div>
-                        </div>
-                        <div class="pannier__col d-flex">
-                            <select name="#" id="#" class="c-using__select">
-                                <option value="100г">100 .г</option>
-                                <option value="200г">200 .г</option>
-                            </select>
-                            <div class="pannier__quantity quantity">
-                                <input type="number" class="quantity__input" min="1" max="9" step="1" value="1">
-                            </div>
-                            <div class="c-using__price c-using__price_old">2510р</div>
-                            <div class="c-using__price c-using__price_new">1210р</div>
-                            <div class="pannier__close"></div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="pannier__item d-flex">
-                <img src="img/basket-image.jpg" alt="" class="pannier__image">
-                <div class="pannier__row d-flex">
-                    <div class="pannier__name">Миндаль не жаренный</div>
-                    <div class="pannier__bottom d-flex">
-                        <div class="pannier__col d-flex">
-                            <div class="pannier__code code d-flex">
-                                <div class="code__name">Артикул: </div>
-                                <div class="code__value">1111-111-111</div>
+                <div class="pannier__item d-flex">
+                    <img src="img/basket-image.jpg" alt="" class="pannier__image">
+                    <div class="pannier__row d-flex">
+                        <div class="pannier__name">Миндаль не жаренный</div>
+                        <div class="pannier__bottom d-flex">
+                            <div class="pannier__col d-flex">
+                                <div class="pannier__code code d-flex">
+                                    <div class="code__name">Артикул: </div>
+                                    <div class="code__value">1111-111-111</div>
+                                </div>
+                                <div class="pannier__presence presence">
+                                    <i class="presence__icon presence__icon_out"></i>
+                                    <div class="presence__text presence__text_out">Нет в наличии</div>
+                                </div>
                             </div>
-                            <div class="pannier__presence presence">
-                                <i class="presence__icon presence__icon_check-green"></i>
-                                <div class="presence__text">Есть в наличии</div>
+                            <div class="pannier__col p-cols d-flex">
+                                <select name="#" id="#" class="c-using__select p-cols__item">
+                                    <option value="100г">100 .г</option>
+                                    <option value="200г">200 .г</option>
+                                </select>
+                                <div class="pannier__quantity quantity p-cols__item">
+                                    <input type="number" class="quantity__input" min="1" max="9" step="1" value="1">
+                                </div>
+                                <div class="c-using__price c-using__price_old p-cols__item">2510р</div>
+                                <div class="c-using__price c-using__price_new p-cols__item">1210р</div>
+                                <button class="pannier__close p-cols__item">x</button>
                             </div>
-                        </div>
-                        <div class="pannier__col d-flex">
-                            <select name="#" id="#" class="c-using__select">
-                                <option value="100г">100 .г</option>
-                                <option value="200г">200 .г</option>
-                            </select>
-                            <div class="pannier__quantity quantity">
-                                <input type="number" class="quantity__input" min="1" max="9" step="1" value="1">
-                            </div>
-                            <div class="c-using__price c-using__price_old">2510р</div>
-                            <div class="c-using__price c-using__price_new">1210р</div>
-                            <div class="pannier__close"></div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="order">
-                <h2 class="order__title title title_h2 title_text-trans_none">Оформление заказа</h2>
+                <h2 class="order__title title title_h3 title_text-trans_none">Оформление заказа</h2>
                 <p class="order__subtitle">Персональные данные</p>
                 <form class="order__form form">
-                    <div class="form__grid wrap d-flex">
-                        <div class="form__group form__group_width-25">
-                            <input type="text" class="form__input">
+                    <div class="form__grid form__grid_line-bottom wrap d-flex">
+                        <div class="form__group form__group_select form__group_width-25">
+                            <select class="form__select">
+                                <option value="Санкт-Петербург">Санкт-Петербург</option>
+                                <option value="Санкт-Петербург">Москва</option>
+                            </select>
                         </div>
                         <div class="form__group form__group_width_75">
-                            <input type="text" class="form__input">
+                            <input type="text" class="form__input" placeholder="Ваш адрес">
                         </div>
                         <div class="form__group form__group_width-25">
-                            <input type="text" class="form__input">
+                            <input type="text" class="form__input" placeholder="Ваше имя">
                         </div>
                         <div class="form__group form__group_width-25">
-                            <input type="text" class="form__input">
+                            <input type="text" class="form__input" placeholder="Ваша фамилия">
                         </div>
                         <div class="form__group form__group_width-25">
-                            <input type="text" class="form__input">
+                            <input type="text" class="form__input" placeholder="Ваш телефон">
                         </div>
                         <div class="form__group form__group_width-25">
-                            <input type="text" class="form__input">
+                            <input type="text" class="form__input" placeholder="Ваш e-mail">
                         </div>
                     </div>
-                    <div class="form__grid d-flex">
+                    <div class="order__delivery d-flex">
                         <div class="order__col">
                             <div class="order__radio d-flex">
-                                <div class="form__radiobox">
-                                    <input type="radio" id="a-option" class="form__radio" name="selector">
+                                <div class="form__radiobox radio-item d-flex">
+                                    <input type="radio" id="a-option" class="form__radio radio" name="selector">
                                     <label for="a-option">Доставка курьером</label>
-                                    <div class="radio__check"></div>
+                                    <div class="radio-item__text">Cегодня в 10:00</div>
                                 </div>
-                                <div class="border"></div>
-                                <div class="form__radiobox">
-                                    <input type="radio" id="b-option" class="form__radio" name="selector">
+                                <div class="order__border border"></div>
+                                <div class="form__radiobox radio-item d-flex">
+                                    <input type="radio" id="b-option" class="form__radio radio" name="selector">
                                     <label for="b-option">Самовывоз</label>
-                                    <div class="radio__check"></div>
+                                    <div class="radio-item__text">Пн-Пт, 9:00 - 18:00</div>
                                 </div>
                             </div>
                         </div>
                         <div class="order__col">
                             <div class="order__descr">
-                                Некоторые заказы могут занять большее время на обработку. Товар, которого нет в наличии может быть доставленн по факту поступления на склад
+                                Некоторые заказы могут занять большее время на обработку.<br> Товар, которого нет в наличии может быть доставленн по факту поступления на склад
                             </div>
                         </div>
                     </div>
-                    <div class="form__grid">
-                        <h2 class="order__title title title_h2 title_text-trans_none">Выберите способ оплаты</h2>
+                    <div class="order__payment">
+                        <h2 class="order__title title title_h4 title_text-trans_none">Выберите способ оплаты</h2>
                         <div class="form__payment payment d-flex">
-                            <div class="payment__col col d-flex">
+                            <label class="payment__col payment__radio col d-flex">
+                                <img src="img/paymant__icon_gray.png" alt="" class="payment__icon">
+                                <div class="payment__text">
+                                    Наличными при получении
+                                </div>
+                                <input type="radio" class="radio__item">
+                            </label>
+                            <label class="payment__col payment__radio col d-flex">
                                 <img src="img/paymant__icon.png" alt="" class="payment__icon">
                                 <div class="payment__text">
                                     Наличными при получении
                                 </div>
-                            </div>
-                            <div class="payment__col col d-flex">
+                                <input type="radio" class="radio__item">
+                            </label>
+                            <label class="payment__col payment__radio col d-flex">
                                 <img src="img/paymant__icon.png" alt="" class="payment__icon">
                                 <div class="payment__text">
                                     Наличными при получении
                                 </div>
-                            </div>
-                            <div class="payment__col col d-flex">
+                                <input type="radio" class="radio__item">
+                            </label>
+                            <label class="payment__col payment__radio col d-flex">
                                 <img src="img/paymant__icon.png" alt="" class="payment__icon">
-                                <div class="payment__text">
+                                <div class="payment__text" class="radio__item">
                                     Наличными при получении
                                 </div>
-                            </div>
-                            <div class="payment__col col d-flex">
-                                <img src="img/paymant__icon.png" alt="" class="payment__icon">
-                                <div class="payment__text">
-                                    Наличными при получении
-                                </div>
-                            </div>
+                                <input type="radio" class="radio__item">
+                            </label>
                         </div>
                     </div>
                 </form>
@@ -160,10 +169,16 @@
     </section>
     <section class="total">
         <div class="container">
-            <h2 class="total__title title">Итоговая стоимость</h2>
-            <div class="form__check">
+            <div class="total__grid d-flex">
+                <div class="total__title title title_text-trans_none">Итоговая стоимость: <span class="total__value">10 250 р</span></div>
+                <a href="#" class="form__btn btn btn_round-right-big d-flex">
+                    <i class="btn__icon icon-sprite icon-btn-gift"></i>
+                    <span class="btn__text">Оформить заказ</span>
+                </a>
+            </div>
+            <div class="total__check form__check">
                 <input id="form__checkbox-2" class="form__checkbox" type="checkbox" checked="checked" name="checkbox" value="true">
-                <label for="form__checkbox-2">я подтверждаю согласие с правилами и условиями<a href="#" class="form__checkbox-link">политики конфиденциальности</a></label>
+                <label for="form__checkbox-2">я подтверждаю согласие с правилами и условиями <a href="#" class="form__checkbox-link">политики конфиденциальности</a></label>
             </div>
         </div>
     </section>

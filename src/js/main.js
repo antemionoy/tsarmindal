@@ -102,20 +102,20 @@ function customSelect() {
 
 function yaMap() {
 
-    if($('#map').length){
+    if ($('#map').length) {
 
         ymaps.ready(init);
-        var myMap, 
-        myPlacemark = [];
+        var myMap,
+            myPlacemark = [];
 
-        function init(){ 
+        function init() {
             myMap = new ymaps.Map("map", {
                 center: [59.959541, 30.316213],
                 zoom: 13,
                 controls: ['zoomControl'],
                 behaviors: ['drag']
-            }); 
-            
+            });
+
             myPlacemark[0] = new ymaps.Placemark([55.715297, 37.574435], {
                 hintContent: 'Москва',
                 balloonContentHeader: 'Лужнецкая набережная, д.2/4, офис 237',
@@ -125,7 +125,7 @@ function yaMap() {
                 iconImageSize: [37, 50],
                 iconImageOffset: [-20, -60]
             });
-   
+
 
             for (var i = 0; i < myPlacemark.length; i++) {
                 myMap.geoObjects.add(myPlacemark[i]);
@@ -139,9 +139,30 @@ function yaMap() {
 }
 
 
+function busketHover() {
+
+    var timeKeeper;
+
+    $('.search-btn').mouseenter(function() {
+
+        $(this).siblings('.search-input').addClass('active').focus();
+
+        clearTimeout(timeKeeper);
+    });
+
+    $('.search-input').focusout(function() {
+
+        timeKeeper = setTimeout(function() {
+            $('.search-input').removeClass('active').val('');
+        }, 150);
+
+    });
+
+}
+
 
 $(function() {
-
+    busketHover();
     yaMap();
     cardBsuket();
     owlFunction('.card__carousel');

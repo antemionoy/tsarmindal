@@ -45,10 +45,6 @@
                             </li>
                             <li class="drop-city__item d-flex">
                                 <i class="menu__icon icon-sprite icon-icon-point"></i>
-                                <a href="#" class="drop-city__link">Тюмень</a>
-                            </li>
-                            <li class="drop-city__item d-flex">
-                                <i class="menu__icon icon-sprite icon-icon-point"></i>
                                 <a href="#" class="drop-city__link">Нижний Новгород</a>
                             </li>
                         </ul>
@@ -88,12 +84,12 @@
                         </ul>
                     </div>
                     <div class="header__item d-flex">
-                        <div class="search-box">
-                            <input type="text" name="search" placeholder="Орехи интересуют?" class="search-text" />
+                        <form action="#" class="search-box">
+                            <input type="text" name="search" placeholder="Орехи интересуют?" class="search-input" />
                             <button href="#" class="header__search search search-btn">
                                 <i class="icon-sprite icon-search"></i>
                             </button>
-                        </div>
+                        </form>
                         <a href="#" class="header__basket basket">
                             <i class="icon-sprite icon-basket"></i>
                             <p class="basket__figure">
@@ -216,15 +212,16 @@
         <!-- <div class="header__back-bottom"></div> -->
     </header>
 <main class="main">
-    <div class="contacts">
-        <div class="container">
-            <div class="breadcrumbs d-flex">
+    <div id="map" class="map">
+        <div class="contacts__gradient"></div>
+        <div class="contacts">
+            <div class="contacts__breadcrumbs breadcrumbs d-flex">
                 <div class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Главная</a></div>
                 <div class="breadcrumbs__item">Котакты</div>
             </div>
             <h1 class="contacts__title title_h2 title_text-trans_none">Контакты</h1>
             <div class="contacts__block">
-                <form action="" class="contacts__form form form-callback">
+                <form action="#" class="contacts__form form form-callback">
                     <div class="form__text">Если у вас есть вопросы пожалуйста напишите <br> нам и мы ответим вам в ближайшее время</div>
                     <div class="form__inner wrap row d-flex">
                         <div class="form__group">
@@ -248,19 +245,26 @@
             </div>
             <div class="contacts__block contacts__block_info">
                 <div class="contacts__item d-flex">
-                    <i class="icon-sprite icon-callback-orange"></i>
+                    <i class="contacts__icon icon-sprite icon-callback-orange"></i>
                     <div class="contacts__row wrap d-flex">
                         <a href="#" class="contacts__phone phone">+7 (812) <span class="phone__big">123-45-67</span></a>
-                        <a href="#" class="contacts__phone phone"><span class="phone__big">8 800 123-45-67</span></a>
+                        <a href="#" class="contacts__phone phone">8 800 <span class="phone__big">123-45-67</span></a>
                         <div href="#" class="header__time time-work">время работы: <span class="time-work__info">пн-пт, 9:00-20:00</span></div>
                     </div>
                 </div>
+                <div class="contacts__item d-flex">
+                    <i class="contacts__icon icon-sprite icon-callback-orange"></i>
+                    <div class="contacts__row d-flex">
+                        <address class="contacts__address address">Царско-Ореховый проспект, дом 7 </address>
+                    </div>
+                </div>
+                <div class="contacts__item d-flex">
+                    <i class="contacts__icon icon-sprite icon-callback-orange"></i>
+                    <div class="contacts__row d-flex">
+                        <a href="#" class="contacts__mail mail mail_color-dark">info@domain.com</a>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-    </div>
-    <div id="map" class="map">
-        <div class="map__box">
         </div>
     </div>
 </main>

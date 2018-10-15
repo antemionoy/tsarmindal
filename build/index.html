@@ -45,10 +45,6 @@
                             </li>
                             <li class="drop-city__item d-flex">
                                 <i class="menu__icon icon-sprite icon-icon-point"></i>
-                                <a href="#" class="drop-city__link">Тюмень</a>
-                            </li>
-                            <li class="drop-city__item d-flex">
-                                <i class="menu__icon icon-sprite icon-icon-point"></i>
                                 <a href="#" class="drop-city__link">Нижний Новгород</a>
                             </li>
                         </ul>
@@ -88,12 +84,12 @@
                         </ul>
                     </div>
                     <div class="header__item d-flex">
-                        <div class="search-box">
-                            <input type="text" name="search" placeholder="Орехи интересуют?" class="search-text" />
+                        <form action="#" class="search-box">
+                            <input type="text" name="search" placeholder="Орехи интересуют?" class="search-input" />
                             <button href="#" class="header__search search search-btn">
                                 <i class="icon-sprite icon-search"></i>
                             </button>
-                        </div>
+                        </form>
                         <a href="#" class="header__basket basket">
                             <i class="icon-sprite icon-basket"></i>
                             <p class="basket__figure">
@@ -216,7 +212,7 @@
         <!-- <div class="header__back-bottom"></div> -->
     </header>
 <main class="main">
-    <section class="promo promo_back-red">
+    <section class="promo">
         <div class="promo__slider">
             <img src="img/promo__image.jpg" class="promo__slide" alt="">
             <img src="img/promo__image.jpg" class="promo__slide" alt="">
@@ -224,37 +220,42 @@
             <img src="img/promo__image.jpg" class="promo__slide" alt="">
             <img src="img/promo__image.jpg" class="promo__slide" alt="">
         </div>
-        <div class="container">
-            <div class="promo__row d-flex">
-                <div class="promo__col promo__col-text promo__col_vert-center d-flex">
-                    <h1 class="promo__title title title_h1">Орехи <br>и сухофрукты</h1>
-                    <p class="promo__description">Орехи и сухофрукты высочайшего
-                        <br> качества</p>
-                </div>
-                <div class="promo__col promo__col_vert-center promo__col_align-end promo__col-pros d-flex">
-                    <div class="promo__pros pros">
-                        <div class="pros__item d-flex">
-                            <div class="pros__circle">
-                                <i class="pros__icon icon-sprite icon-pros_one"></i>
+            <div class="container">
+                <div class="promo__row d-flex">
+                    <div class="promo__col promo__col-text promo__col_vert-center d-flex">
+                        <h1 class="promo__title title title_h1">Орехи <br>и сухофрукты</h1>
+                        <p class="promo__description">Орехи и сухофрукты высочайшего
+                            <br> качества</p>
+                    </div>
+                    <div class="promo__col promo__col_vert-center promo__col_align-end promo__col-pros d-flex">
+                        <div class="promo__pros pros">
+                            <div class="pros__item d-flex">
+                                <div class="pros__circle">
+                                    <i class="pros__icon icon-sprite icon-pros_one"></i>
+                                </div>
+                                <div class="pros__text">Бесплатная доставка при заказе от 2500р</div>
                             </div>
-                            <div class="pros__text">Бесплатная доставка при заказе от 2500р</div>
-                        </div>
-                        <div class="pros__item d-flex">
-                            <div class="pros__circle">
-                                <i class="pros__icon icon-sprite icon-pros_two"></i>
+                            <div class="pros__item d-flex">
+                                <div class="pros__circle">
+                                    <i class="pros__icon icon-sprite icon-pros_two"></i>
+                                </div>
+                                <div class="pros__text">оплата наличыми, по карте, по счету для юр.лиц</div>
                             </div>
-                            <div class="pros__text">оплата наличыми, по карте, по счету для юр.лиц</div>
-                        </div>
-                        <div class="pros__item d-flex">
-                            <div class="pros__circle">
-                                <i class="pros__icon icon-sprite icon-pros_three"></i>
+                            <div class="pros__item d-flex">
+                                <div class="pros__circle">
+                                    <i class="pros__icon icon-sprite icon-pros_three"></i>
+                                </div>
+                                <div class="pros__text">БОЛЕЕ 50<br> ПУНКТОВ ВЫДАЧИ</div>
                             </div>
-                            <div class="pros__text">БОЛЕЕ 50<br> ПУНКТОВ ВЫДАЧИ</div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+            <div class="promo_back-red">
+            <!--     <svg width="230" height="140">
+                    <ellipse rx="110" ry="30" cx="115" cy="70" fill="gold" stroke="orange" stroke-width="5" transform="rotate(-23 115 70)" />
+                </svg> -->
+            </div>
     </section>
     <section class="catalog">
         <div class="container">
