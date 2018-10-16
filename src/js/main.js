@@ -167,33 +167,15 @@ function busketHover() {
 
     var flag = true;
 
-
     $('.header__basket').mouseenter(function(e) {
-
-        if (flag) {
 
             $(this).find('.m-basket').addClass('active');
 
-            flag = false;
-
-             console.log(flag);
-
-        }
-
     });
 
+    $('.m-basket__close').on('click', function(){
 
-    $('.header__basket').mouseleave(function() {
-
-        if (!flag) {
-
-            $(this).find('.m-basket').removeClass('active');
-
-            flag = true;
-
-            console.log(flag);
-
-        }
+        $(this).parent().removeClass('active');
 
     });
 
