@@ -65,43 +65,78 @@
                     <div class="header__item">
                         <img src="../img/logo.png" alt="" class="header__logo">
                     </div>
-                    <div class="header__item h-item h-item_center d-flex">
-                        <i class="icon-sprite icon-callback-orange"></i>
-                        <div class="h-item__block header__item_flex-column d-flex">
-                            <a href="#" class="header__phone phone">+7 (812) <span class="phone__big">123-45-67</span></a>
-                            <a href="#" class="header__callback callback">Заказать звонок</a>
+                        <div class="header__item h-item h-item_center d-flex">
+                            <i class="icon-sprite icon-callback-orange"></i>
+                            <div class="h-item__block header__item_flex-column d-flex">
+                                <a href="#" class="header__phone phone">+7 (812) <span class="phone__big">123-45-67</span></a>
+                                <a href="#" class="header__callback callback" data-remodal-target="modal-callback">Заказать звонок</a>
+                            </div>
+                        </div>
+                        <div class="header__item header__item_flex-column d-flex">
+                            <a href="#" class="header__phone phone"><span class="phone__big">8 800 123-45-67</span></a>
+                            <div href="#" class="header__time time-work">время работы: <span class="time-work__info">пн-пт, 9:00-20:00</span></div>
+                        </div>
+                        <div class="header__item">
+                            <ul class="header__social social social_borders d-flex">
+                                <a href="#" class="social__link icon-sprite icon-fb"></a>
+                                <a href="#" class="social__link icon-sprite icon-vk"></a>
+                                <a href="#" class="social__link icon-sprite icon-insta"></a>
+                            </ul>
+                        </div>
+                        <div class="header__item d-flex">
+                            <form action="#" class="search-box">
+                                <input type="text" name="search" placeholder="Орехи интересуют?" class="search-input" />
+                                <button href="#" class="header__search search search-btn">
+                                    <i class="icon-sprite icon-search"></i>
+                                </button>
+                            </form>
+                            <div class="header__basket basket">
+                                <a href="basket.html" class="basket__link">
+                                    <i class="icon-sprite icon-basket"></i>
+                                    <p class="basket__figure">
+                                         <span class="basket__count">15</span>
+                                    </p>
+                                </a>
+                                <div class="m-basket">
+                                    <div class="m-basket__content d-flex">
+                                        <div class="m-basket__item d-flex">
+                                            <img src="img/basket-image.jpg" alt="Изображение товара" class="m-basket__image">
+                                            <a href="#" class="m-basket__name">Миндаль не жаренный</a>
+                                            <div class="m-basket__right d-flex">
+                                                <div class="m-basket__price">500р</div>
+                                                <div class="m-basket__quantity quantity">
+                                                    <input type="number" class="quantity__input" min="1" max="9" step="1" value="1">
+                                                </div>
+                                            </div>
+                                            <a href="#" class="m-basket__delete"></a>
+                                        </div>
+                                        <div class="m-basket__item d-flex">
+                                            <img src="img/basket-image.jpg" alt="Изображение товара" class="m-basket__image">
+                                            <a href="#" class="m-basket__name">Миндаль не жаренный</a>
+                                            <div class="m-basket__right d-flex">
+                                                <div class="m-basket__price">500р</div>
+                                                <div class="m-basket__quantity quantity">
+                                                    <input type="number" class="quantity__input" min="1" max="9" step="1" value="1">
+                                                </div>
+                                            </div>
+                                            <a href="#" class="m-basket__delete"></a>
+                                        </div>
+                                    </div>
+                                    <div class="m-basket__bottom">
+                                        <p class="m-basket__total">Итого:<span class="m-basket__value">1250р</span></p>
+                                        <a href="#" class="m-basket__btn btn">
+                                            <i class="btn__icon icon-sprite icon-btn-gift"></i>
+                                            <span class="btn__text">Перейти в корзину</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="header__item header__item_flex-column d-flex">
-                        <a href="#" class="header__phone phone"><span class="phone__big">8 800 123-45-67</span></a>
-                        <div href="#" class="header__time time-work">время работы: <span class="time-work__info">пн-пт, 9:00-20:00</span></div>
-                    </div>
-                    <div class="header__item">
-                        <ul class="header__social social social_borders d-flex">
-                            <a href="#" class="social__link icon-sprite icon-fb"></a>
-                            <a href="#" class="social__link icon-sprite icon-vk"></a>
-                            <a href="#" class="social__link icon-sprite icon-insta"></a>
-                        </ul>
-                    </div>
-                    <div class="header__item d-flex">
-                        <form action="#" class="search-box">
-                            <input type="text" name="search" placeholder="Орехи интересуют?" class="search-input" />
-                            <button href="#" class="header__search search search-btn">
-                                <i class="icon-sprite icon-search"></i>
-                            </button>
-                        </form>
-                        <a href="#" class="header__basket basket">
-                            <i class="icon-sprite icon-basket"></i>
-                            <p class="basket__figure">
-                                <span class="basket__count">15</span>
-                            </p>
-                        </a>
-                    </div>
-                </div>
-                <nav class="header__bottom nav">
-                    <ul class="nav__list d-flex">
-                        <li class="nav__item nav__item_hover nav__item_flex-col d-flex">
-                            <a href="#" class="nav__link">
+                    <nav class="header__bottom nav">
+                        <ul class="nav__list d-flex">
+                            <li class="nav__item nav__item_hover nav__item_flex-col d-flex">
+                                <a href="#" class="nav__link">
                                 <i class="nav__icon icon nav__icon_one"></i>
                                 <span class="nav__text">Орехи</span>
                                 <ul class="nav__dropdown nav-drop d-flex">
@@ -110,45 +145,45 @@
                                             <i class="nav__icon nav__icon_one icon"></i>
                                             <span class="nav__text">Орехи</span>
                                         </a>
-                                    </li>
-                                    <li class="nav-drop__item d-flex">
-                                        <a href="#" class="nav__link">
+                            </li>
+                            <li class="nav-drop__item d-flex">
+                                <a href="#" class="nav__link">
                                             <i class="nav__icon nav__icon_one icon "></i>
                                             <span class="nav__text">Орехи</span>
                                         </a>
-                                    </li>
-                                    <li class="nav-drop__item d-flex">
-                                        <a href="#" class="nav__link">
+                            </li>
+                            <li class="nav-drop__item d-flex">
+                                <a href="#" class="nav__link">
                                             <i class="nav__icon nav__icon_one icon"></i>
                                             <span class="nav__text">Орехи</span>
                                         </a>
-                                    </li>
-                                    <li class="nav-drop__item d-flex">
-                                        <a href="#" class="nav__link">
+                            </li>
+                            <li class="nav-drop__item d-flex">
+                                <a href="#" class="nav__link">
                                             <i class="nav__icon nav__icon_one icon"></i>
                                             <span class="nav__text">Орехи</span>
                                         </a>
-                                    </li>
-                                    <li class="nav-drop__item d-flex">
-                                        <a href="#" class="nav__link">
+                            </li>
+                            <li class="nav-drop__item d-flex">
+                                <a href="#" class="nav__link">
                                             <i class="nav__icon nav__icon_one icon"></i>
                                             <span class="nav__text">Орехи</span>
                                         </a>
-                                    </li>
-                                    <li class="nav-drop__item d-flex">
-                                        <a href="#" class="nav__link">
+                            </li>
+                            <li class="nav-drop__item d-flex">
+                                <a href="#" class="nav__link">
                                             <i class="nav__icon nav__icon_one icon"></i>
                                             <span class="nav__text">Орехи</span>
                                         </a>
-                                    </li>
-                                    <li class="nav-drop__item d-flex">
-                                        <a href="#" class="nav__link">
+                            </li>
+                            <li class="nav-drop__item d-flex">
+                                <a href="#" class="nav__link">
                                             <i class="nav__icon nav__icon_one icon"></i>
                                             <span class="nav__text">Орехи</span>
                                         </a>
-                                    </li>
-                                </ul>
-                            </a>
+                            </li>
+                        </ul>
+                        </a>
                         </li>
                         <li class="nav__item nav__item_flex-col d-flex">
                             <a href="#" class="nav__link">
@@ -204,10 +239,10 @@
                                 <span class="nav__text">Царская подписка</span>
                             </a>
                         </li>
-                    </ul>
-                </nav>
+                        </ul>
+                    </nav>
+                </div>
             </div>
-        </div>
         </div>
         <!-- <div class="header__back-bottom"></div> -->
     </header>
@@ -267,28 +302,36 @@
                 <h3 class="delivery__title title title_h3 title_text-trans_none">Оплата и Заказ</h3>
                 <div class="delivery__descr">Вы можете произвести оплату товара любым удобным для Вас способом:</div>
                 <div class="delivery__payment payment d-flex">
-                    <div class="payment__col col d-flex">
-                        <img src="img/paymant__icon.png" alt="" class="payment__icon">
-                        <div class="payment__text">
-                            Наличными при получении
+                    <div class="payment__col payment__col_default col d-flex">
+                        <div class="payment__item d-flex">
+                            <svg class="payment__svg">
+                                <use xlink:href="#cash" />
+                            </svg>
+                            <div class="payment__text">Наличными при получении</div>
                         </div>
                     </div>
-                    <div class="payment__col col d-flex">
-                        <img src="img/paymant__icon.png" alt="" class="payment__icon">
-                        <div class="payment__text">
-                            Наличными при получении
+                    <div class="payment__col payment__col_default col d-flex">
+                        <div class="payment__item d-flex">
+                            <svg class="payment__svg">
+                                <use xlink:href="#card" />
+                            </svg>
+                            <div class="payment__text">Оплатой картой при получении</div>
                         </div>
                     </div>
-                    <div class="payment__col col d-flex">
-                        <img src="img/paymant__icon.png" alt="" class="payment__icon">
-                        <div class="payment__text">
-                            Наличными при получении
+                    <div class="payment__col payment__col_default col d-flex">
+                        <div class="payment__item d-flex">
+                            <svg class="payment__svg">
+                                <use xlink:href="#bank" />
+                            </svg>
+                            <div class="payment__text">Оплата банковским переводом</div>
                         </div>
                     </div>
-                    <div class="payment__col col d-flex">
-                        <img src="img/paymant__icon.png" alt="" class="payment__icon">
-                        <div class="payment__text">
-                            Наличными при получении
+                    <div class="payment__col payment__col_default col d-flex">
+                        <div class="payment__item d-flex">
+                            <svg class="payment__svg">
+                                <use xlink:href="#bitkoin" />
+                            </svg>
+                            <div class="payment__text">Оплата криптовалютой «Биткоин»</div>
                         </div>
                     </div>
                 </div>
@@ -471,6 +514,105 @@
                             </div>
                         </div>
 </footer>
+<svg style="display:none" xml:space="preserve" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px">
+    <symbol viewBox="-49 141 512 512" id="cash">
+        <path d="M239,173H47c-4.4,0-8,3.6-8,8v336c0,4.4,3.6,8,8,8h8v11.8c-0.1,35.3,11.8,69.6,33.8,97.2c2.8,3.5,7.8,4,11.2,1.2
+    s4-7.8,1.2-11.2l0,0c-19.7-24.8-30.3-55.6-30.2-87.2V525h32v54.7c0,4.4,3.6,8,8,8s8-3.6,8-8v-94.6c0-8.8,7.2-16,16-16s16,7.2,16,16
+    v70.5c0,2.1,0.8,4.1,2.3,5.6l3.7,3.7c16.7,17.1,26,40.1,26,64c0,4.4,3.6,8,8,8s8-3.6,8-8c0-17.5-4.3-34.8-12.4-50.3
+    c11.4-15.7,18.3-34.3,20-53.7H239c4.4,0,8-3.6,8-8v-44.7l157.7-158.2c3.1-3.1,3.1-8.2,0-11.3c0,0,0,0,0,0l-120-119.4
+    c-3.1-3.1-8.2-3.1-11.3,0L247,209.8V181C247,176.6,243.4,173,239,173z M177.2,564c-2.7-3.6-5.7-7.1-8.8-10.4l-1.4-1.4V525h23.5
+    C189.1,538.9,184.6,552.2,177.2,564z M231,509h-64v-23.9c0.2-17.6-13.9-32.1-31.6-32.2c-14.7-0.2-27.7,9.8-31.3,24.1H87v-32
+    c0-4.4-3.6-8-8-8c-4.4,0-8,3.6-8,8v40c0,4.4,3.6,8,8,8h24v16H55V189h176V509z M279,200.3l108.7,108.1L247,449.6v-25.3l109.7-109.7
+    c3.1-3.1,3.1-8.2,0-11.3l-16-16c-3.2-3.1-8.2-3-11.3,0.2c-3,3.1-3,8,0,11.1l10.3,10.3L247,401.7V280.3l32-32l10.3,10.3
+    c3.2,3.1,8.2,3,11.3-0.2c3-3.1,3-8,0-11.1l-16-16c-3.1-3.1-8.2-3.1-11.3,0L247,257.7v-25.2L279,200.3z" />
+        <path d="M143,413c39.8,0,72-32.2,72-72s-32.2-72-72-72s-72,32.2-72,72C71,380.7,103.3,413,143,413z M143,397
+    c-15,0-29.4-6.1-39.9-16.8c17.6,3.6,35.4-5.1,43.4-21.2c5.2,12.9,15.9,22.9,29.1,27.4C166.1,393.3,154.7,397,143,397z M199,341
+    c0,11.4-3.5,22.5-10,31.8c-17.6-1-31-16-30.1-33.6c0.9-16.2,13.8-29.2,30.1-30.1C195.5,318.5,199,329.6,199,341z M143,285
+    c11.7,0,23.1,3.7,32.6,10.6c-13.2,4.5-23.9,14.5-29.1,27.4c-8-16.1-25.8-24.8-43.4-21.2C113.6,291.1,128,285,143,285z M111,317
+    c13.3,0,24,10.7,24,24s-10.7,24-24,24s-24-10.7-24-24S97.7,317,111,317z" />
+        <path d="M207,437c-4.4,0-8,3.6-8,8v32h-8c-4.4,0-8,3.6-8,8s3.6,8,8,8h16c4.4,0,8-3.6,8-8v-40C215,440.6,211.4,437,207,437z" />
+    </symbol>
+    <symbol viewBox="-49 117 512 560" id="card">
+        <path d="M365.6,368.3L283.8,266v-82.3c0-23.5-19.1-42.7-42.7-42.7H70.5c-23.5,0-42.7,19.1-42.7,42.7v307.2
+        c0,23.5,19.1,42.7,42.7,42.7h76.8V556c0,53.5,43.5,97,97,97h133.4c4.7,0,8.5-3.8,8.5-8.5V427C386.2,405.7,378.9,384.9,365.6,368.3z
+         M241.1,158.1c14.1,0,25.6,11.5,25.6,25.6v223.8l-34.1-36.3V158.1H241.1z M215.5,353.1l-14.6-15.5c-3.2-3.4-6.9-6.2-11-8.2V158.1
+        h25.6V353.1z M44.9,490.9V183.7c0-14.1,11.5-25.6,25.6-25.6h102.4v167.1c-10.5-0.2-20.2,3.6-27.7,10.7c-0.1,0.1-0.8,0.7-0.9,0.8
+        c-14.6,14.6-15.6,37.6-2.3,53.4l30.8,36.4v89.9H70.5C56.4,516.5,44.9,505,44.9,490.9z M216.3,516.5h-26.4v-69.8l25.6,30.2v26.4
+        C215.5,507.8,215.8,512.1,216.3,516.5z M369.1,635.9H244.3c-44.1,0-80-35.9-80-80v-22.4h55.3c9.6,34.5,35.2,63.4,69.7,76.3l6-16
+        c-37.5-14.1-62.7-50.4-62.7-90.5v-29.5c0-2-0.7-4-2-5.5l-75.5-89.1c-7.6-9-7-22.1,1.7-30.8c4.4-4.1,10-6.2,16-6.1
+        c6,0.2,11.6,2.7,15.7,7l114.7,121.9l12.4-11.7l-31.8-33.8V293.3l68.5,85.6c10.9,13.6,16.8,30.6,16.8,48V635.9z" />
+        <rect x="70.5" y="183.7" width="17.1" height="110.9" />
+        <rect x="113.1" y="183.7" width="17.1" height="68.3" />
+        <path d="M130.2,422.6H79c-4.7,0-8.5,3.8-8.5,8.5v51.2c0,4.7,3.8,8.5,8.5,8.5h51.2c4.7,0,8.5-3.8,8.5-8.5v-51.2
+        C138.7,426.4,134.9,422.6,130.2,422.6z M121.7,473.8H87.5v-34.1h34.1V473.8z" />
+    </symbol>
+    <symbol viewBox="-92 118 598 558" id="bank">
+        <path d="M457.2,310.2L288,201.3c-0.2-0.1-0.5-0.3-0.6-0.4l-72-46.4c-5.1-3.3-11.7-3.3-16.8,0L-43.2,310.2c-5.5,3.6-8,10.2-6.1,16.5
+    c1.9,6.3,7.5,10.5,14.1,10.5H9.9v9.4c0,7.2,5.9,13,13,13v212.4c-7.2,0-13,5.9-13,13v10.2h-34.3c-8.6,0-15.6,7-15.6,15.6v15.3
+    c0,8.6,7,15.6,15.6,15.6h462.8c8.6,0,15.6-7,15.6-15.6v-15.3c0-8.6-7-15.6-15.6-15.6h-34.3v-10.2c0-7.2-5.9-13-13-13V359.7
+    c7.2,0,13-5.9,13-13v-9.4h45.2c6.6,0,12.2-4.2,14.1-10.5C465.2,320.4,462.8,313.8,457.2,310.2z M-23.4,625.2l0-13.3l460.8,0l0,13.3
+    L-23.4,625.2z M235.3,572.1V359.7c7.2,0,13-5.9,13-13v-9.4l73.2,0v9.4c0,7.2,5.9,13,13,13v212.4c-7.2,0-13,5.9-13,13v10.2h-73.2
+    v-10.2C248.3,577.9,242.5,572.1,235.3,572.1z M218.7,351.4v228.9c0,4.6,3.7,8.3,8.3,8.3h4.8v6.7l-49.5,0v-6.7h4.8
+    c4.6,0,8.3-3.7,8.3-8.3V351.4c0-4.6-3.7-8.3-8.3-8.3h-4.8v-5.9h49.5v5.9H227C222.4,343.1,218.7,346.9,218.7,351.4z M79.5,572.1
+    V359.7c7.2,0,13-5.9,13-13v-9.4l73.2,0v9.4c0,7.2,5.9,13,13,13v212.4c-7.2,0-13,5.9-13,13v10.2H92.5v-10.2
+    C92.5,577.9,86.7,572.1,79.5,572.1z M63,351.4v228.9c0,4.6,3.7,8.3,8.3,8.3H76v6.7H26.5v-6.7h4.8c4.6,0,8.3-3.7,8.3-8.3v-18.6l0-0.2
+    l0-0.2v-210c0-4.6-3.7-8.3-8.3-8.3h-4.8v-5.9l49.5,0v5.9h-4.8C66.7,343.1,63,346.9,63,351.4z M209.2,212.6l168,108.1H36.8l168-108.1
+    C206.1,211.8,207.9,211.8,209.2,212.6z M374.5,351.4v228.9c0,4.6,3.7,8.3,8.3,8.3h4.8v6.7H338v-6.7h4.8c4.6,0,8.3-3.7,8.3-8.3V351.4
+    c0-4.6-3.7-8.3-8.3-8.3H338v-5.9l49.5,0v5.9h-4.8C378.2,343.1,374.5,346.9,374.5,351.4z M-29,320.7l236-151.8l87.4,56.3
+    c0.3,0.2,0.5,0.3,0.7,0.4L443,320.7h-35.2l-189.6-122c-6.8-4.4-15.6-4.4-22.4,0L6.2,320.7H-29z" />
+    </symbol>
+    <symbol viewBox="-71 119 556 556" id="bitkoin">
+        <g>
+            <path d="M206.9,598.8C95.8,598.8,5.4,508.4,5.4,397.3c0-111.1,90.4-201.5,201.5-201.5s201.5,90.4,201.5,201.5
+        C408.4,508.4,318,598.8,206.9,598.8z M206.9,213.8c-101.2,0-183.5,82.3-183.5,183.5s82.3,183.5,183.5,183.5
+        c101.2,0,183.5-82.3,183.5-183.5S308.1,213.8,206.9,213.8z" />
+        </g>
+        <g>
+            <path d="M206.9,653.6c-68.5,0-132.8-26.7-181.3-75.1c-48.4-48.4-75.1-112.8-75.1-181.3S-22.8,264.4,25.7,216
+        C74.1,167.6,138.4,141,206.9,141c68.5,0,132.8,26.7,181.3,75.1c48.4,48.4,75.1,112.8,75.1,181.3s-26.7,132.8-75.1,181.3
+        S275.4,653.6,206.9,653.6z M206.9,159c-63.7,0-123.5,24.8-168.5,69.8s-69.8,104.9-69.8,168.5s24.8,123.5,69.8,168.5
+        c45,45,104.9,69.8,168.5,69.8c63.7,0,123.5-24.8,168.5-69.8c45-45,69.8-104.9,69.8-168.5s-24.8-123.5-69.8-168.5
+        C330.4,183.7,270.6,159,206.9,159z" />
+        </g>
+        <g>
+            <path d="M225.9,405.7H182c-5.5,0-10,4.5-10,10v56c0,5.5,4.5,10,10,10h43.9c21,0,38-17,38-38S246.9,405.7,225.9,405.7z M225.9,461.7
+        H192v-36h33.9c9.9,0,18,8.1,18,18S235.9,461.7,225.9,461.7z" />
+            <path d="M231,275.1V253c0-5.5-4.5-10-10-10c-5.5,0-10,4.5-10,10v22h-32v-22c0-5.5-4.5-10-10-10c-5.5,0-10,4.5-10,10v22h-38
+        c-5.5,0-10,4.5-10,10v40c0,5.5,4.5,10,10,10h14v124h-14c-5.5,0-10,4.5-10,10v40c0,5.5,4.5,10,10,10h38v22c0,5.5,4.5,10,10,10
+        c5.5,0,10-4.5,10-10v-22h32v22c0,5.5,4.5,10,10,10c5.5,0,10-4.5,10-10v-22.1c40-1.8,72-34.8,72-75.2c0-17.2-5.7-33.4-16.2-46.7
+        c10.5-13.2,16.2-29.5,16.2-46.7C303,309.9,271,276.8,231,275.1z M227.7,499H131v-20h14c5.5,0,10-4.5,10-10V325c0-5.5-4.5-10-10-10
+        h-14v-20h96.7c30.5,0,55.3,24.8,55.3,55.3c0,15-5.9,29-16.7,39.5c-1.9,1.9-3,4.5-3,7.1c0,2.7,1.1,5.3,3,7.1
+        c10.7,10.5,16.7,24.6,16.7,39.5C283,474.2,258.2,499,227.7,499z" />
+            <path d="M182,388.3h43.9c21,0,38-17,38-38s-17-38-38-38H182c-5.5,0-10,4.5-10,10v56C172,383.9,176.5,388.3,182,388.3z M192,332.3
+        h33.9c9.9,0,18,8.1,18,18s-8.1,18-18,18H192V332.3z" />
+        </g>
+    </symbol>
+</svg>
+<div class="remodal" data-remodal-id="modal-callback">
+    <div class="remodal__title title title_h3 title_text-trans_none">Заказать звонок</div>
+    <div class="remodal__subtitle">Закажите звонок и мы свяжемся с Вами в любое удобное для вас время</div>
+    <form action="#" class="remodal__form form">
+        <div class="form__inner remodal__grid wrap d-flex">
+            <div class="form__group remodal__col">
+                <input type="text" class="form__input" placeholder="Ваше имя">
+            </div>
+            <div class="form__group remodal__col">
+                <input type="text" class="form__input" placeholder="Ваша Фамилия">
+            </div>
+            <div class="form__group remodal__col">
+                <input type="text" class="form__input" placeholder="Ваш телефон">
+            </div>
+            <div class="form__group remodal__col">
+                <input type="text" class="form__input" placeholder="Ваш e-mail">
+            </div>
+        </div>
+        <button class="remodal__btn form__btn btn btn_round-right-big d-flex">
+            <i class="btn__icon icon-sprite icon-btn-mail"></i>
+            <span class="btn__text">Отправить</span>
+        </button>
+    </form>
+    <button data-remodal-action="close" class="remodal__close">Закрыть</button>
+</div>
 <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript">
 </script>
 <script src="js/main.js"></script>

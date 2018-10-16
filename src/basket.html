@@ -133,33 +133,41 @@
                     <div class="order__payment">
                         <h2 class="order__title title title_h4 title_text-trans_none">Выберите способ оплаты</h2>
                         <div class="form__payment payment d-flex">
-                            <label class="payment__col payment__radio col d-flex">
-                                <img src="img/paymant__icon_gray.png" alt="" class="payment__icon">
-                                <div class="payment__text">
-                                    Наличными при получении
+                            <label class="payment__col payment__col_radio col d-flex">
+                                <input type="radio" class="payment__input" name="payment" value="Наличными при получении">
+                                <div class="payment__item d-flex">
+                                    <svg class="payment__svg">
+                                        <use xlink:href="#cash" />
+                                    </svg>
+                                    <div class="payment__text">Наличными при получении</div>
                                 </div>
-                                <input type="radio" class="radio__item">
                             </label>
-                            <label class="payment__col payment__radio col d-flex">
-                                <img src="img/paymant__icon.png" alt="" class="payment__icon">
-                                <div class="payment__text">
-                                    Наличными при получении
+                            <label class="payment__col payment__col_radio col d-flex">
+                                <input type="radio" class="payment__input" name="payment" value="Оплатой картой при получении">
+                                <div class="payment__item d-flex">
+                                    <svg class="payment__svg">
+                                        <use xlink:href="#card" />
+                                    </svg>
+                                    <div class="payment__text">Оплатой картой при получении</div>
                                 </div>
-                                <input type="radio" class="radio__item">
                             </label>
-                            <label class="payment__col payment__radio col d-flex">
-                                <img src="img/paymant__icon.png" alt="" class="payment__icon">
-                                <div class="payment__text">
-                                    Наличными при получении
+                            <label class="payment__col payment__col_radio col d-flex">
+                                <input type="radio" class="payment__input" name="payment" value="Оплата банковским переводом">
+                                <div class="payment__item d-flex">
+                                    <svg class="payment__svg">
+                                        <use xlink:href="#bank" />
+                                    </svg>
+                                    <div class="payment__text">Оплата банковским переводом</div>
                                 </div>
-                                <input type="radio" class="radio__item">
                             </label>
-                            <label class="payment__col payment__radio col d-flex">
-                                <img src="img/paymant__icon.png" alt="" class="payment__icon">
-                                <div class="payment__text" class="radio__item">
-                                    Наличными при получении
+                            <label class="payment__col payment__col_radio col d-flex">
+                                <input type="radio" class="payment__input" name="payment" value="Оплата криптовалютой «Биткоин»">
+                                <div class="payment__item d-flex">
+                                    <svg class="payment__svg">
+                                        <use xlink:href="#bitkoin" />
+                                    </svg>
+                                    <div class="payment__text">Оплата криптовалютой «Биткоин»</div>
                                 </div>
-                                <input type="radio" class="radio__item">
                             </label>
                         </div>
                     </div>

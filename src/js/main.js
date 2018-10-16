@@ -1,6 +1,7 @@
 //= ../../bower_components/jquery/dist/jquery.min.js
 //= ../../bower_components/owl.carousel/dist/owl.carousel.js
 //= ../../bower_components/select2/dist/js/select2.min.js
+//= ../../bower_components/remodal/dist/remodal.min.js
 
 
 "use strict";
@@ -139,7 +140,7 @@ function yaMap() {
 }
 
 
-function busketHover() {
+function searchHover() {
 
     var timeKeeper;
 
@@ -161,8 +162,49 @@ function busketHover() {
 }
 
 
+
+function busketHover() {
+
+    var flag = true;
+
+
+    $('.header__basket').mouseenter(function(e) {
+
+        if (flag) {
+
+            $(this).find('.m-basket').addClass('active');
+
+            flag = false;
+
+             console.log(flag);
+
+        }
+
+    });
+
+
+    $('.header__basket').mouseleave(function() {
+
+        if (!flag) {
+
+            $(this).find('.m-basket').removeClass('active');
+
+            flag = true;
+
+            console.log(flag);
+
+        }
+
+    });
+
+}
+
+
+
 $(function() {
+
     busketHover();
+    searchHover();
     yaMap();
     cardBsuket();
     owlFunction('.card__carousel');
