@@ -169,11 +169,11 @@ function busketHover() {
 
     $('.header__basket').mouseenter(function(e) {
 
-            $(this).find('.m-basket').addClass('active');
+        $(this).find('.m-basket').addClass('active');
 
     });
 
-    $('.m-basket__close').on('click', function(){
+    $('.m-basket__close').on('click', function() {
 
         $(this).parent().removeClass('active');
 
@@ -182,9 +182,19 @@ function busketHover() {
 }
 
 
+function menu() {
+    
+    $(".hamburger").click(function() {
+        $(this).toggleClass("is-active");
+    });
+
+}
+
+
 
 $(function() {
 
+    menu();
     busketHover();
     searchHover();
     yaMap();

@@ -94,7 +94,7 @@
                                 <div class="footer__col">
                                     <div class="footer__item footer__item_flex-column d-flex">
                                         <a href="#" class="footer__phone phone">+7 (812) <span class="phone__big">123-45-67</span></a>
-                                        <a href="#" class="footer__callback callback">Заказать звонок</a>
+                                        <a href="#" class="footer__callback callback" data-remodal-target="modal-callback">Заказать звонок</a>
                                     </div>
                                     <div class="footer__item footer__item_flex-column d-flex">
                                         <a href="#" class="footer__phone phone"><span class="phone__big">8 800 123-45-67</span></a>
@@ -107,6 +107,31 @@
                             </div>
                         </div>
 </footer>
+<div class="remodal" data-remodal-id="modal-callback">
+    <div class="remodal__title title title_h3 title_text-trans_none">Заказать звонок</div>
+    <div class="remodal__subtitle">Закажите звонок и мы свяжемся с Вами в любое удобное для вас время</div>
+    <form action="#" class="remodal__form form">
+        <div class="form__inner remodal__grid wrap d-flex">
+            <div class="form__group remodal__col">
+                <input type="text" class="form__input" placeholder="Ваше имя">
+            </div>
+            <div class="form__group remodal__col">
+                <input type="text" class="form__input" placeholder="Ваша Фамилия">
+            </div>
+            <div class="form__group remodal__col">
+                <input type="text" class="form__input" placeholder="Ваш телефон">
+            </div>
+            <div class="form__group remodal__col">
+                <input type="text" class="form__input" placeholder="Ваш e-mail">
+            </div>
+        </div>
+        <button class="remodal__btn form__btn btn btn_round-right-big d-flex">
+            <i class="btn__icon icon-sprite icon-btn-rocket"></i>
+            <span class="btn__text">Отправить</span>
+        </button>
+    </form>
+    <button data-remodal-action="close" class="remodal__close">Закрыть</button>
+</div>
 <svg style="display:none" xml:space="preserve" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px">
     <symbol viewBox="-49 141 512 512" id="cash">
         <path d="M239,173H47c-4.4,0-8,3.6-8,8v336c0,4.4,3.6,8,8,8h8v11.8c-0.1,35.3,11.8,69.6,33.8,97.2c2.8,3.5,7.8,4,11.2,1.2
@@ -181,31 +206,6 @@
         </g>
     </symbol>
 </svg>
-<div class="remodal" data-remodal-id="modal-callback">
-    <div class="remodal__title title title_h3 title_text-trans_none">Заказать звонок</div>
-    <div class="remodal__subtitle">Закажите звонок и мы свяжемся с Вами в любое удобное для вас время</div>
-    <form action="#" class="remodal__form form">
-        <div class="form__inner remodal__grid wrap d-flex">
-            <div class="form__group remodal__col">
-                <input type="text" class="form__input" placeholder="Ваше имя">
-            </div>
-            <div class="form__group remodal__col">
-                <input type="text" class="form__input" placeholder="Ваша Фамилия">
-            </div>
-            <div class="form__group remodal__col">
-                <input type="text" class="form__input" placeholder="Ваш телефон">
-            </div>
-            <div class="form__group remodal__col">
-                <input type="text" class="form__input" placeholder="Ваш e-mail">
-            </div>
-        </div>
-        <button class="remodal__btn form__btn btn btn_round-right-big d-flex">
-            <i class="btn__icon icon-sprite icon-btn-mail"></i>
-            <span class="btn__text">Отправить</span>
-        </button>
-    </form>
-    <button data-remodal-action="close" class="remodal__close">Закрыть</button>
-</div>
 <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript">
 </script>
 <script src="js/main.js"></script>

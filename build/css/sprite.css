@@ -16,21 +16,27 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 // HTML
 <i class="icon icon-home"></i>
 */
+.icon-address {
+  background-image: url(sprite.png);
+  background-position: -256px 0px;
+  width: 15px;
+  height: 21px;
+}
 .icon-articul-gray-line {
   background-image: url(sprite.png);
-  background-position: -242px -100px;
+  background-position: -256px -146px;
   width: 9px;
   height: 23px;
 }
 .icon-basket {
   background-image: url(sprite.png);
-  background-position: -206px 0px;
+  background-position: -154px -183px;
   width: 21px;
   height: 21px;
 }
 .icon-basket_white {
   background-image: url(sprite.png);
-  background-position: -206px -135px;
+  background-position: -37px -223px;
   width: 20px;
   height: 16px;
 }
@@ -42,67 +48,85 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-book {
   background-image: url(sprite.png);
-  background-position: -37px -179px;
+  background-position: -32px -254px;
   width: 17px;
   height: 16px;
 }
 .icon-btn-basket {
   background-image: url(sprite.png);
-  background-position: -206px -104px;
+  background-position: -72px -223px;
   width: 20px;
   height: 16px;
 }
 .icon-btn-click {
   background-image: url(sprite.png);
-  background-position: -242px -66px;
+  background-position: -256px -112px;
   width: 13px;
   height: 19px;
 }
 .icon-btn-gift {
   background-image: url(sprite.png);
-  background-position: -127px -134px;
+  background-position: -81px -183px;
   width: 22px;
   height: 21px;
 }
 .icon-btn-knife {
   background-image: url(sprite.png);
-  background-position: -164px -134px;
+  background-position: -118px -183px;
   width: 21px;
   height: 21px;
 }
 .icon-btn-mail {
   background-image: url(sprite.png);
-  background-position: 0px -179px;
+  background-position: 0px -223px;
   width: 22px;
   height: 16px;
 }
+.icon-btn-rocket {
+  background-image: url(sprite.png);
+  background-position: 0px -183px;
+  width: 25px;
+  height: 25px;
+}
 .icon-calendar {
   background-image: url(sprite.png);
-  background-position: -242px -138px;
+  background-position: -256px -184px;
   width: 14px;
   height: 16px;
 }
 .icon-callback-orange {
   background-image: url(sprite.png);
-  background-position: -206px -36px;
+  background-position: -112px -100px;
   width: 21px;
   height: 19px;
 }
 .icon-fb {
   background-image: url(sprite.png);
-  background-position: -112px -49px;
+  background-position: -210px -46px;
   width: 31px;
   height: 30px;
 }
+.icon-fb_gray {
+  background-image: url(sprite.png);
+  background-position: -112px 0px;
+  width: 34px;
+  height: 35px;
+}
+.icon-google_gray {
+  background-image: url(sprite.png);
+  background-position: -161px -49px;
+  width: 34px;
+  height: 34px;
+}
 .icon-icon-point {
   background-image: url(sprite.png);
-  background-position: -242px -33px;
+  background-position: -256px -79px;
   width: 14px;
   height: 18px;
 }
 .icon-insta {
   background-image: url(sprite.png);
-  background-position: 0px -134px;
+  background-position: -210px -91px;
   width: 30px;
   height: 30px;
 }
@@ -114,49 +138,67 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-libido {
   background-image: url(sprite.png);
-  background-position: -158px -91px;
+  background-position: -210px -136px;
   width: 28px;
   height: 26px;
 }
+.icon-like {
+  background-image: url(sprite.png);
+  background-position: 0px -254px;
+  width: 17px;
+  height: 17px;
+}
 .icon-line-menu {
   background-image: url(sprite.png);
-  background-position: -82px -56px;
+  background-position: -256px -36px;
   width: 10px;
   height: 28px;
 }
+.icon-mail {
+  background-image: url(sprite.png);
+  background-position: -107px -223px;
+  width: 21px;
+  height: 15px;
+}
 .icon-person {
   background-image: url(sprite.png);
-  background-position: -242px 0px;
+  background-position: -225px -183px;
   width: 16px;
   height: 18px;
 }
+.icon-printest_gray {
+  background-image: url(sprite.png);
+  background-position: -161px 0px;
+  width: 34px;
+  height: 34px;
+}
 .icon-pros_one {
   background-image: url(sprite.png);
-  background-position: -86px -134px;
+  background-position: -161px -98px;
   width: 26px;
   height: 21px;
 }
 .icon-pros_three {
   background-image: url(sprite.png);
-  background-position: -112px -94px;
+  background-position: -140px -134px;
   width: 26px;
   height: 25px;
 }
 .icon-pros_two {
   background-image: url(sprite.png);
-  background-position: -45px -134px;
+  background-position: -40px -183px;
   width: 26px;
   height: 23px;
 }
 .icon-search {
   background-image: url(sprite.png);
-  background-position: -206px -70px;
+  background-position: -190px -183px;
   width: 20px;
   height: 19px;
 }
 .icon-shastiye {
   background-image: url(sprite.png);
-  background-position: -112px 0px;
+  background-position: -46px -134px;
   width: 31px;
   height: 34px;
 }
@@ -168,19 +210,31 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-stroinost {
   background-image: url(sprite.png);
-  background-position: -36px -56px;
+  background-position: 0px -134px;
   width: 31px;
   height: 34px;
 }
+.icon-tw_gray {
+  background-image: url(sprite.png);
+  background-position: -36px -56px;
+  width: 35px;
+  height: 35px;
+}
 .icon-vk {
   background-image: url(sprite.png);
-  background-position: -158px -45px;
+  background-position: -210px 0px;
   width: 31px;
   height: 31px;
 }
+.icon-vk_gray {
+  background-image: url(sprite.png);
+  background-position: -112px -50px;
+  width: 34px;
+  height: 35px;
+}
 .icon-zdorovie {
   background-image: url(sprite.png);
-  background-position: -158px 0px;
+  background-position: -92px -134px;
   width: 33px;
   height: 30px;
 }
