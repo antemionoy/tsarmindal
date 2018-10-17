@@ -1479,10 +1479,13 @@ h6 {
         &_width-25 {
             width: 25%;
             min-width: 250px;
+            flex: 1 1 25%;
+
         }
 
         &_width_75 {
             width: 75%;
+            flex: 1 1 75%;
         }
 
         &_select {
@@ -1683,7 +1686,7 @@ h6 {
 .radio+label:after {
     content: '✓';
     position: absolute;
-    top: 11px;
+    top: 50%;
     left: -25px;
     width: 16px;
     height: 16px;
