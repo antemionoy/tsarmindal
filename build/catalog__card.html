@@ -91,12 +91,12 @@
                             </button>
                         </form>
                         <div class="header__basket basket">
-                            <div class="basket__link">
+                            <a href="#" class="basket__link">
                                 <i class="icon-sprite icon-basket"></i>
                                 <p class="basket__figure">
                                     <span class="basket__count">15</span>
                                 </p>
-                            </div>
+                            </a>
                             <div class="m-basket">
                                 <div class="m-basket__content d-flex">
                                     <div class="m-basket__item d-flex">
@@ -139,7 +139,19 @@
                         <span class="line"></span>
                     </div>
                 </div>
-                <nav class="header__bottom nav">
+                <nav class="nav mobile-sidebar">
+                   <div class="h-item__block header__item_flex-column d-flex">
+                        <a href="#" class="header__phone phone">+7 (812) <span class="phone__big">123-45-67</span></a>
+                        <a href="#" class="header__callback callback" data-remodal-target="modal-callback">Заказать звонок</a>
+                    </div>
+                    <div class="mobile-sidebar__city sidebar-city d-flex">
+                        <div class="sidebar-city__item active">
+                            <a href="#" class="sidebar-city__link">Cпб</a>
+                        </div>
+                        <div class="sidebar-city__item">
+                            <a href="#" class="sidebar-city__link">Москва</a>
+                        </div>
+                    </div>
                     <ul class="nav__list d-flex">
                         <li class="nav__item nav__item_hover nav__item_flex-col d-flex">
                             <a href="#" class="nav__link">
@@ -194,6 +206,24 @@
                                             <span class="nav__text">Пекан</span>
                                         </a>
                                     </li>
+                                    <li class="nav-drop__item d-flex">
+                                        <a href="#" class="nav__link">
+                                            <i class="nav__icon nav__icon_one icon"></i>
+                                            <span class="nav__text">Фисташки</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-drop__item d-flex">
+                                        <a href="#" class="nav__link">
+                                            <i class="nav__icon nav__icon_one icon"></i>
+                                            <span class="nav__text">Фундук</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-drop__item d-flex">
+                                        <a href="#" class="nav__link">
+                                            <i class="nav__icon nav__icon_one icon"></i>
+                                            <span class="nav__text">Косточки абрикоса</span>
+                                        </a>
+                                    </li>
                                 </ul>
                             </a>
                         </li>
@@ -205,43 +235,97 @@
                                     <li class="nav-drop__item d-flex">
                                         <a href="#" class="nav__link">
                                             <i class="nav__icon nav__icon_one icon"></i>
-                                            <span class="nav__text">Орехи</span>
+                                            <span class="nav__text">Курага</span>
                                         </a>
                                     </li>
                                     <li class="nav-drop__item d-flex">
                                         <a href="#" class="nav__link">
                                             <i class="nav__icon nav__icon_one icon "></i>
-                                            <span class="nav__text">Орехи</span>
+                                            <span class="nav__text">Персик</span>
                                         </a>
                                     </li>
                                     <li class="nav-drop__item d-flex">
                                         <a href="#" class="nav__link">
                                             <i class="nav__icon nav__icon_one icon"></i>
-                                            <span class="nav__text">Орехи</span>
+                                            <span class="nav__text">Чернослив</span>
                                         </a>
                                     </li>
                                     <li class="nav-drop__item d-flex">
                                         <a href="#" class="nav__link">
                                             <i class="nav__icon nav__icon_one icon"></i>
-                                            <span class="nav__text">Орехи</span>
+                                            <span class="nav__text">Яблоко</span>
                                         </a>
                                     </li>
                                     <li class="nav-drop__item d-flex">
                                         <a href="#" class="nav__link">
                                             <i class="nav__icon nav__icon_one icon"></i>
-                                            <span class="nav__text">Орехи</span>
+                                            <span class="nav__text">Груша</span>
                                         </a>
                                     </li>
                                     <li class="nav-drop__item d-flex">
                                         <a href="#" class="nav__link">
                                             <i class="nav__icon nav__icon_one icon"></i>
-                                            <span class="nav__text">Орехи</span>
+                                            <span class="nav__text">Урюк</span>
                                         </a>
                                     </li>
                                     <li class="nav-drop__item d-flex">
                                         <a href="#" class="nav__link">
                                             <i class="nav__icon nav__icon_one icon"></i>
-                                            <span class="nav__text">Орехи</span>
+                                            <span class="nav__text">Инжир</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-drop__item d-flex">
+                                        <a href="#" class="nav__link">
+                                            <i class="nav__icon nav__icon_one icon"></i>
+                                            <span class="nav__text">Изюм</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-drop__item d-flex">
+                                        <a href="#" class="nav__link">
+                                            <i class="nav__icon nav__icon_one icon"></i>
+                                            <span class="nav__text">Финики</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-drop__item d-flex">
+                                        <a href="#" class="nav__link">
+                                            <i class="nav__icon nav__icon_one icon"></i>
+                                            <span class="nav__text">Вишня</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-drop__item d-flex">
+                                        <a href="#" class="nav__link">
+                                            <i class="nav__icon nav__icon_one icon"></i>
+                                            <span class="nav__text">Банан</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-drop__item d-flex">
+                                        <a href="#" class="nav__link">
+                                            <i class="nav__icon nav__icon_one icon"></i>
+                                            <span class="nav__text">Ананас</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-drop__item d-flex">
+                                        <a href="#" class="nav__link">
+                                            <i class="nav__icon nav__icon_one icon"></i>
+                                            <span class="nav__text">Кизил</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-drop__item d-flex">
+                                        <a href="#" class="nav__link">
+                                            <i class="nav__icon nav__icon_one icon"></i>
+                                            <span class="nav__text">Клубника</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-drop__item d-flex">
+                                        <a href="#" class="nav__link">
+                                            <i class="nav__icon nav__icon_one icon"></i>
+                                            <span class="nav__text">Манго</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-drop__item d-flex">
+                                        <a href="#" class="nav__link">
+                                            <i class="nav__icon nav__icon_one icon"></i>
+                                            <span class="nav__text">Томаты</span>
                                         </a>
                                     </li>
                                 </ul>
@@ -255,43 +339,85 @@
                                     <li class="nav-drop__item d-flex">
                                         <a href="#" class="nav__link">
                                             <i class="nav__icon nav__icon_one icon"></i>
-                                            <span class="nav__text">Орехи</span>
+                                            <span class="nav__text">Вишня</span>
                                         </a>
                                     </li>
                                     <li class="nav-drop__item d-flex">
                                         <a href="#" class="nav__link">
                                             <i class="nav__icon nav__icon_one icon "></i>
-                                            <span class="nav__text">Орехи</span>
+                                            <span class="nav__text">Клубника</span>
                                         </a>
                                     </li>
                                     <li class="nav-drop__item d-flex">
                                         <a href="#" class="nav__link">
                                             <i class="nav__icon nav__icon_one icon"></i>
-                                            <span class="nav__text">Орехи</span>
+                                            <span class="nav__text">Киви</span>
                                         </a>
                                     </li>
                                     <li class="nav-drop__item d-flex">
                                         <a href="#" class="nav__link">
                                             <i class="nav__icon nav__icon_one icon"></i>
-                                            <span class="nav__text">Орехи</span>
+                                            <span class="nav__text">Дыня</span>
                                         </a>
                                     </li>
                                     <li class="nav-drop__item d-flex">
                                         <a href="#" class="nav__link">
                                             <i class="nav__icon nav__icon_one icon"></i>
-                                            <span class="nav__text">Орехи</span>
+                                            <span class="nav__text">Помела</span>
                                         </a>
                                     </li>
                                     <li class="nav-drop__item d-flex">
                                         <a href="#" class="nav__link">
                                             <i class="nav__icon nav__icon_one icon"></i>
-                                            <span class="nav__text">Орехи</span>
+                                            <span class="nav__text">Папайя</span>
                                         </a>
                                     </li>
                                     <li class="nav-drop__item d-flex">
                                         <a href="#" class="nav__link">
                                             <i class="nav__icon nav__icon_one icon"></i>
-                                            <span class="nav__text">Орехи</span>
+                                            <span class="nav__text">Кумкват</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-drop__item d-flex">
+                                        <a href="#" class="nav__link">
+                                            <i class="nav__icon nav__icon_one icon"></i>
+                                            <span class="nav__text">Кокос</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-drop__item d-flex">
+                                        <a href="#" class="nav__link">
+                                            <i class="nav__icon nav__icon_one icon"></i>
+                                            <span class="nav__text">Имбирь</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-drop__item d-flex">
+                                        <a href="#" class="nav__link">
+                                            <i class="nav__icon nav__icon_one icon"></i>
+                                            <span class="nav__text">Ананас</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-drop__item d-flex">
+                                        <a href="#" class="nav__link">
+                                            <i class="nav__icon nav__icon_one icon"></i>
+                                            <span class="nav__text">Яблоко</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-drop__item d-flex">
+                                        <a href="#" class="nav__link">
+                                            <i class="nav__icon nav__icon_one icon"></i>
+                                            <span class="nav__text">Лимон</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-drop__item d-flex">
+                                        <a href="#" class="nav__link">
+                                            <i class="nav__icon nav__icon_one icon"></i>
+                                            <span class="nav__text">Апельсин</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-drop__item d-flex">
+                                        <a href="#" class="nav__link">
+                                            <i class="nav__icon nav__icon_one icon"></i>
+                                            <span class="nav__text">Томаты</span>
                                         </a>
                                     </li>
                                 </ul>
@@ -305,43 +431,55 @@
                                     <li class="nav-drop__item d-flex">
                                         <a href="#" class="nav__link">
                                             <i class="nav__icon nav__icon_one icon"></i>
-                                            <span class="nav__text">Орехи</span>
+                                            <span class="nav__text">Орехи в шоколаде</span>
                                         </a>
                                     </li>
                                     <li class="nav-drop__item d-flex">
                                         <a href="#" class="nav__link">
                                             <i class="nav__icon nav__icon_one icon "></i>
-                                            <span class="nav__text">Орехи</span>
+                                            <span class="nav__text">Сухофрукты в шоколаде</span>
                                         </a>
                                     </li>
                                     <li class="nav-drop__item d-flex">
                                         <a href="#" class="nav__link">
                                             <i class="nav__icon nav__icon_one icon"></i>
-                                            <span class="nav__text">Орехи</span>
+                                            <span class="nav__text">Восточные сладости</span>
                                         </a>
                                     </li>
                                     <li class="nav-drop__item d-flex">
                                         <a href="#" class="nav__link">
                                             <i class="nav__icon nav__icon_one icon"></i>
-                                            <span class="nav__text">Орехи</span>
+                                            <span class="nav__text">Конфеты</span>
                                         </a>
                                     </li>
                                     <li class="nav-drop__item d-flex">
                                         <a href="#" class="nav__link">
                                             <i class="nav__icon nav__icon_one icon"></i>
-                                            <span class="nav__text">Орехи</span>
+                                            <span class="nav__text">Мармелад</span>
                                         </a>
                                     </li>
                                     <li class="nav-drop__item d-flex">
                                         <a href="#" class="nav__link">
                                             <i class="nav__icon nav__icon_one icon"></i>
-                                            <span class="nav__text">Орехи</span>
+                                            <span class="nav__text">Сахар</span>
                                         </a>
                                     </li>
                                     <li class="nav-drop__item d-flex">
                                         <a href="#" class="nav__link">
                                             <i class="nav__icon nav__icon_one icon"></i>
-                                            <span class="nav__text">Орехи</span>
+                                            <span class="nav__text">Зефир</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-drop__item d-flex">
+                                        <a href="#" class="nav__link">
+                                            <i class="nav__icon nav__icon_one icon"></i>
+                                            <span class="nav__text">Батончики/снеки</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-drop__item d-flex">
+                                        <a href="#" class="nav__link">
+                                            <i class="nav__icon nav__icon_one icon"></i>
+                                            <span class="nav__text">Шоколад</span>
                                         </a>
                                     </li>
                                 </ul>
@@ -355,43 +493,37 @@
                                     <li class="nav-drop__item d-flex">
                                         <a href="#" class="nav__link">
                                             <i class="nav__icon nav__icon_one icon"></i>
-                                            <span class="nav__text">Орехи</span>
+                                            <span class="nav__text">Варенье</span>
                                         </a>
                                     </li>
                                     <li class="nav-drop__item d-flex">
                                         <a href="#" class="nav__link">
                                             <i class="nav__icon nav__icon_one icon "></i>
-                                            <span class="nav__text">Орехи</span>
+                                            <span class="nav__text">Джем</span>
                                         </a>
                                     </li>
                                     <li class="nav-drop__item d-flex">
                                         <a href="#" class="nav__link">
                                             <i class="nav__icon nav__icon_one icon"></i>
-                                            <span class="nav__text">Орехи</span>
+                                            <span class="nav__text">Мёд</span>
                                         </a>
                                     </li>
                                     <li class="nav-drop__item d-flex">
                                         <a href="#" class="nav__link">
                                             <i class="nav__icon nav__icon_one icon"></i>
-                                            <span class="nav__text">Орехи</span>
+                                            <span class="nav__text">Крем мёд</span>
                                         </a>
                                     </li>
                                     <li class="nav-drop__item d-flex">
                                         <a href="#" class="nav__link">
                                             <i class="nav__icon nav__icon_one icon"></i>
-                                            <span class="nav__text">Орехи</span>
+                                            <span class="nav__text">Продукция пчеловодства</span>
                                         </a>
                                     </li>
                                     <li class="nav-drop__item d-flex">
                                         <a href="#" class="nav__link">
                                             <i class="nav__icon nav__icon_one icon"></i>
-                                            <span class="nav__text">Орехи</span>
-                                        </a>
-                                    </li>
-                                    <li class="nav-drop__item d-flex">
-                                        <a href="#" class="nav__link">
-                                            <i class="nav__icon nav__icon_one icon"></i>
-                                            <span class="nav__text">Орехи</span>
+                                            <span class="nav__text">Сгущенка</span>
                                         </a>
                                     </li>
                                 </ul>
@@ -405,43 +537,37 @@
                                     <li class="nav-drop__item d-flex">
                                         <a href="#" class="nav__link">
                                             <i class="nav__icon nav__icon_one icon"></i>
-                                            <span class="nav__text">Орехи</span>
+                                            <span class="nav__text">Арабика</span>
                                         </a>
                                     </li>
                                     <li class="nav-drop__item d-flex">
                                         <a href="#" class="nav__link">
                                             <i class="nav__icon nav__icon_one icon "></i>
-                                            <span class="nav__text">Орехи</span>
+                                            <span class="nav__text">Рабуста</span>
                                         </a>
                                     </li>
                                     <li class="nav-drop__item d-flex">
                                         <a href="#" class="nav__link">
                                             <i class="nav__icon nav__icon_one icon"></i>
-                                            <span class="nav__text">Орехи</span>
+                                            <span class="nav__text">Кофейные капсулы</span>
                                         </a>
                                     </li>
                                     <li class="nav-drop__item d-flex">
                                         <a href="#" class="nav__link">
                                             <i class="nav__icon nav__icon_one icon"></i>
-                                            <span class="nav__text">Орехи</span>
+                                            <span class="nav__text">Чай листовой</span>
                                         </a>
                                     </li>
                                     <li class="nav-drop__item d-flex">
                                         <a href="#" class="nav__link">
                                             <i class="nav__icon nav__icon_one icon"></i>
-                                            <span class="nav__text">Орехи</span>
+                                            <span class="nav__text">Чай гранулированный</span>
                                         </a>
                                     </li>
                                     <li class="nav-drop__item d-flex">
                                         <a href="#" class="nav__link">
                                             <i class="nav__icon nav__icon_one icon"></i>
-                                            <span class="nav__text">Орехи</span>
-                                        </a>
-                                    </li>
-                                    <li class="nav-drop__item d-flex">
-                                        <a href="#" class="nav__link">
-                                            <i class="nav__icon nav__icon_one icon"></i>
-                                            <span class="nav__text">Орехи</span>
+                                            <span class="nav__text">Чай пакетированный</span>
                                         </a>
                                     </li>
                                 </ul>
@@ -455,43 +581,19 @@
                                     <li class="nav-drop__item d-flex">
                                         <a href="#" class="nav__link">
                                             <i class="nav__icon nav__icon_one icon"></i>
-                                            <span class="nav__text">Орехи</span>
+                                            <span class="nav__text">Специи</span>
                                         </a>
                                     </li>
                                     <li class="nav-drop__item d-flex">
                                         <a href="#" class="nav__link">
                                             <i class="nav__icon nav__icon_one icon "></i>
-                                            <span class="nav__text">Орехи</span>
+                                            <span class="nav__text">Травы</span>
                                         </a>
                                     </li>
                                     <li class="nav-drop__item d-flex">
                                         <a href="#" class="nav__link">
                                             <i class="nav__icon nav__icon_one icon"></i>
-                                            <span class="nav__text">Орехи</span>
-                                        </a>
-                                    </li>
-                                    <li class="nav-drop__item d-flex">
-                                        <a href="#" class="nav__link">
-                                            <i class="nav__icon nav__icon_one icon"></i>
-                                            <span class="nav__text">Орехи</span>
-                                        </a>
-                                    </li>
-                                    <li class="nav-drop__item d-flex">
-                                        <a href="#" class="nav__link">
-                                            <i class="nav__icon nav__icon_one icon"></i>
-                                            <span class="nav__text">Орехи</span>
-                                        </a>
-                                    </li>
-                                    <li class="nav-drop__item d-flex">
-                                        <a href="#" class="nav__link">
-                                            <i class="nav__icon nav__icon_one icon"></i>
-                                            <span class="nav__text">Орехи</span>
-                                        </a>
-                                    </li>
-                                    <li class="nav-drop__item d-flex">
-                                        <a href="#" class="nav__link">
-                                            <i class="nav__icon nav__icon_one icon"></i>
-                                            <span class="nav__text">Орехи</span>
+                                            <span class="nav__text">Наборы приправ</span>
                                         </a>
                                     </li>
                                 </ul>
@@ -505,52 +607,54 @@
                                     <li class="nav-drop__item d-flex">
                                         <a href="#" class="nav__link">
                                             <i class="nav__icon nav__icon_one icon"></i>
-                                            <span class="nav__text">Орехи</span>
+                                            <span class="nav__text">Сушеные грибы</span>
                                         </a>
                                     </li>
                                     <li class="nav-drop__item d-flex">
                                         <a href="#" class="nav__link">
                                             <i class="nav__icon nav__icon_one icon "></i>
-                                            <span class="nav__text">Орехи</span>
-                                        </a>
-                                    </li>
-                                    <li class="nav-drop__item d-flex">
-                                        <a href="#" class="nav__link">
-                                            <i class="nav__icon nav__icon_one icon"></i>
-                                            <span class="nav__text">Орехи</span>
-                                        </a>
-                                    </li>
-                                    <li class="nav-drop__item d-flex">
-                                        <a href="#" class="nav__link">
-                                            <i class="nav__icon nav__icon_one icon"></i>
-                                            <span class="nav__text">Орехи</span>
-                                        </a>
-                                    </li>
-                                    <li class="nav-drop__item d-flex">
-                                        <a href="#" class="nav__link">
-                                            <i class="nav__icon nav__icon_one icon"></i>
-                                            <span class="nav__text">Орехи</span>
-                                        </a>
-                                    </li>
-                                    <li class="nav-drop__item d-flex">
-                                        <a href="#" class="nav__link">
-                                            <i class="nav__icon nav__icon_one icon"></i>
-                                            <span class="nav__text">Орехи</span>
-                                        </a>
-                                    </li>
-                                    <li class="nav-drop__item d-flex">
-                                        <a href="#" class="nav__link">
-                                            <i class="nav__icon nav__icon_one icon"></i>
-                                            <span class="nav__text">Орехи</span>
+                                            <span class="nav__text">Сушеные ягоды</span>
                                         </a>
                                     </li>
                                 </ul>
                             </a>
                         </li>
-                        <li class="nav__item nav__item_hover-normal nav__item_flex-col d-flex">
+                        <li class="nav__item nav__item_flex-col d-flex">
                             <a href="#" class="nav__link">
                                 <i class="nav__icon nav__icon_icon-podarochnie  icon"></i>
                                 <span class="nav__text">Подарочные наборы</span>
+                                <ul class="nav__dropdown nav-drop d-flex">
+                                    <li class="nav-drop__item d-flex">
+                                        <a href="#" class="nav__link">
+                                            <i class="nav__icon nav__icon_one icon"></i>
+                                            <span class="nav__text">200—700 руб</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-drop__item d-flex">
+                                        <a href="#" class="nav__link">
+                                            <i class="nav__icon nav__icon_one icon "></i>
+                                            <span class="nav__text">700—1500 руб</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-drop__item d-flex">
+                                        <a href="#" class="nav__link">
+                                            <i class="nav__icon nav__icon_one icon "></i>
+                                            <span class="nav__text">1500—3000 руб</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-drop__item d-flex">
+                                        <a href="#" class="nav__link">
+                                            <i class="nav__icon nav__icon_one icon "></i>
+                                            <span class="nav__text">3000 руб</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-drop__item d-flex">
+                                        <a href="#" class="nav__link">
+                                            <i class="nav__icon nav__icon_one icon "></i>
+                                            <span class="nav__text">Подарки на заказ</span>
+                                        </a>
+                                    </li>
+                                </ul>
                             </a>
                         </li>
                         <li class="nav__item nav__item_hover-normal nav__item_flex-col d-flex">
@@ -560,6 +664,31 @@
                             </a>
                         </li>
                     </ul>
+                    <!-- menu mobile -->
+                    <ul class="mobile-sidebar__menu menu d-flex">
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">О нас</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Доставка/оплата</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Как заказать</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Отзывы</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Оптовым клиентам</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Акции</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Контакты</a>
+                        </li>
+                    </ul>
+                    <!-- / menu mobile / -->
                 </nav>
             </div>
         </div>
@@ -648,7 +777,7 @@
                         <div class="c-using__price c-using__price_old">2510р</div>
                         <div class="c-using__price c-using__price_new">1210р</div>
                     </div>
-                    <div class="c-content__buttons d-flex">
+                    <div class="c-content__buttons wrap d-flex">
                         <a href="#" class="c-content__btn btn btn_bgr-yellow d-flex">
                             <i class="btn__icon icon-sprite icon-btn-basket"></i>
                             <span class="btn__text">Добавить в корзину</span>

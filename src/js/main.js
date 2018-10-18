@@ -183,17 +183,48 @@ function busketHover() {
 
 
 function menu() {
-    
+
     $(".hamburger").click(function() {
         $(this).toggleClass("is-active");
+
+        $('.mobile-sidebar').toggleClass('mobile-sidebar__active');
+        $('body').toggleClass('hidden');
+
     });
 
 }
 
 
+function dropdownFun() {
+
+    var parentDropDown = $('.header__bottom');
+    var dropDown = $('.nav__dropdown');
+
+
+    dropDown.each(function() {
+
+        if ($(this).outerWidth() >= 990) {
+
+            $(this).addClass('ouherwidth');
+        }
+
+    });
+}
+
+
+// function stikyMenu() {
+        
+//         $('.header')
+
+// }
+
+
+
 
 $(function() {
 
+
+    dropdownFun();
     menu();
     busketHover();
     searchHover();
