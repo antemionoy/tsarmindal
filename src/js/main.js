@@ -165,19 +165,19 @@ function searchHover() {
 
 function busketHover() {
 
-    var flag = true;
+        var flag = true;
 
-    $('.header__basket').mouseenter(function(e) {
+        $('.basket__link').mouseenter('click', function(e) {
 
-        $(this).find('.m-basket').addClass('active');
+            $(this).parent().find('.m-basket').addClass('active');
 
-    });
+        });
 
-    $('.m-basket__close').on('click', function() {
+        $('.m-basket__close').on('click', function() {
 
-        $(this).parent().removeClass('active');
+            $('.m-basket').removeClass('active');
 
-    });
+        });
 
 }
 
@@ -187,12 +187,19 @@ function menu() {
     $(".hamburger").click(function(e) {
         e.preventDefault();
 
+        if($('.m-basket').hasClass('active')){
+
+            $('.m-basket').removeClass('active');
+        }
+
         $(this).toggleClass("is-active");
 
         $('.mobile-sidebar').toggleClass('mobile-sidebar__active');
         $('body, html').toggleClass('hidden');
         $('.main').toggleClass('blur');
 
+
+   
     });
 
 }
@@ -219,8 +226,10 @@ function fixedSidebar() {
     if ($(window).width() <= 1024) {
 
         var areaTop = $('.header');
+
         var areaTopHeight = $('.header').height();
 
+        $('.mobile-sidebar').css('top', areaTopHeight);
 
         if ($(window).scrollTop() >= areaTop.height()) {
             $('.header').addClass('fixed');
@@ -229,18 +238,46 @@ function fixedSidebar() {
         } else if ($(window).scrollTop() < areaTop.height()) {
             $('.header').removeClass('fixed');
             $('.main').css('padding-top', 0);
+
         }
+    } else {
+        $('.mobile-sidebar').css('top', 0);
     }
 }
 
 
 
+function showAllFiles(blockHide, clickLink) {
 
+    var notFalseFlag = true;
+    blockHide.slice(8).hide();
 
+    clickLink.click(function(e) {
+        e.preventDefault();
 
+        if (notFalseFlag) {
+            notFalseFlag = false;
+
+            blockHide.slice(8).show('slow');
+            clickLink.text('свернуть');
+
+            clickLink.addClass('rotate');
+
+        } else {
+            notFalseFlag = true;
+
+            blockHide.slice(8).hide('slow');
+            clickLink.text('показать еще');
+
+            clickLink.removeClass('rotate');
+
+        }
+
+    });
+}
 
 $(function() {
-
+    showAllFiles($('.catalog__item'), $('.catalog__more'));
     fixedSidebar();
     dropdownFun();
     menu();
@@ -277,9 +314,17 @@ $(function() {
         }
     });
 
+    $('.promo_back-red').addClass('active');
+
 });
 
 
 $(window).scroll(function() {
     fixedSidebar();
+});
+
+
+$(window).resize(function() {
+    fixedSidebar();
+    busketHover();
 });

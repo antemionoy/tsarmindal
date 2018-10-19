@@ -592,7 +592,7 @@ h6 {
     background-color: #fff;
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
     border-radius: 10px;
-    top: 33px;
+    top: 41px;
     right: 0px;
     width: 300px;
     z-index: 1000;
@@ -1149,13 +1149,20 @@ h6 {
     }
 
     &_back-red {
+        opacity: 0;
+        visibility: hidden;
         position: absolute;
-        background: rgba(#8f0101, 0.8);
+        // background: rgba(#8f0101, 0.8);
+        background-image: url(../img/back-red.png);
+        background-repeat: no-repeat;
+        background-position: center 53%, center;
+        background-size: cover;
         top: 0;
         right: 0;
-        width: calc(50% - 200px);
+        width: calc(50% - 100px);
         height: 100%;
         z-index: 2;
+        transform: translateX(100%);
     }
 
     &__description {
@@ -1175,6 +1182,7 @@ h6 {
     &__row {
         justify-content: space-between;
         height: 747px;
+        padding-top: 20px;
     }
 
     &__col {
@@ -1195,7 +1203,16 @@ h6 {
 
     &__pros {
         max-width: 370px;
+        padding-top: 55px;
     }
+}
+
+
+.promo_back-red.active {
+    transition: all .55s cubic-bezier(.25, .46, .45, .94);
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
 }
 
 .owl-dots {
@@ -1419,6 +1436,15 @@ h6 {
             right: -12px;
         }
     }
+}
+
+.catalog__more.rotate:before{
+    transform: rotate(225deg);
+}
+
+.catalog__item.hide{
+    visibility: hidden;
+    opacity: 0;
 }
 
 .catalog__basket .catalog__icon {
