@@ -165,19 +165,19 @@ function searchHover() {
 
 function busketHover() {
 
-        var flag = true;
+    var flag = true;
 
-        $('.basket__link').mouseenter('click', function(e) {
+    $('.basket__link').mouseenter('click', function(e) {
 
-            $(this).parent().find('.m-basket').addClass('active');
+        $(this).parent().find('.m-basket').addClass('active');
 
-        });
+    });
 
-        $('.m-basket__close').on('click', function() {
+    $('.m-basket__close').on('click', function() {
 
-            $('.m-basket').removeClass('active');
+        $('.m-basket').removeClass('active');
 
-        });
+    });
 
 }
 
@@ -187,7 +187,7 @@ function menu() {
     $(".hamburger").click(function(e) {
         e.preventDefault();
 
-        if($('.m-basket').hasClass('active')){
+        if ($('.m-basket').hasClass('active')) {
 
             $('.m-basket').removeClass('active');
         }
@@ -199,7 +199,7 @@ function menu() {
         $('.main').toggleClass('blur');
 
 
-   
+
     });
 
 }

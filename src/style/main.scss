@@ -805,7 +805,8 @@ h6 {
 }
 
 .breadcrumbs {
-    margin: 44px 0px 0px;
+    // margin: 44px 0px 0px;
+    padding-top: 44px;
     font-weight: 500;
     font-size: 14px;
     color: #8d8d8d;
@@ -2385,6 +2386,13 @@ h6 {
         justify-content: flex-end;
         min-width: 40px;
     }
+}
+
+.c-icons svg{
+    width: 50px;
+    height: 50px;
+    fill: #d03838;
+
 }
 
 .code {
